@@ -1,0 +1,167 @@
+######################## default configuration ####################
+baseURL = "https://nouka-it.com/"
+publishDir = "docs" # 公開用ディレクトリをdocsに指定
+languageCode = "JA"
+title = "畑作農家のITツールDIY"
+theme = "liva-hugo"
+summaryLength = "10"
+paginate = 6
+# disqusShortname = "nouka-it"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+  [[params.plugins.css]]
+  URL = "plugins/venobox/venobox.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/venobox/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/fuse.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/mark.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/search.js"
+
+
+############################## navigation ###############################
+[menu]
+
+  # main menu
+  [[menu.main]]
+  name = "プロフィール"
+  URL = "about"
+  weight = 1
+
+  [[menu.main]]
+  name = "記事一覧"
+  URL = "blog"
+  weight = 2
+
+  [[menu.main]]
+  name = "お問い合わせ"
+  URL = "contact"
+  weight = 3
+
+  # footer menu
+  [[menu.footer]]
+  name = "プロフィール"
+  URL = "profile"
+  weight = 1
+
+  [[menu.footer]]
+  name = "記事一覧"
+  URL = "blog"
+  weight = 2
+
+  [[menu.footer]]
+  name = "お問い合わせ"
+  URL = "contact"
+  weight = 3
+
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+banner = "images/banner.png"
+home = "Home"
+# Meta data
+description = "小さなIT活用とプログラミング＆ノーコードで、快適な農場づくりを！"
+author = "おおさき"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# Contact Information
+# mobile = "0124857985320"
+# email = "demo@email.com"
+#location = "Dhaka, Bangladedsh"
+# copyright
+copyright = "| copyright &copy; 2021 大崎真裕 All Rights Reserved |"
+images = ["images/cover.png"]
+
+  # Preloader
+  [params.preloader]
+  enable = true
+  preloader = "" # use .png , .svg or .gif format
+
+  # search
+  [params.search]
+  enable = true
+
+############################ news letter ########################
+[params.newsletter]
+enable = false
+title = "Join Our Newsletter"
+content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
+
+
+[params.slideritem]
+enable = true
+
+[params.recentpost]
+enable = false
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+
+############################# syntacs highlight ########################
+[markup]
+  [markup.highlight]
+    codeFences = true # trueで `` ` ` によるシンタックスハイライトを有効か
+    guessSyntax = false # trueで言語を推測してハイライト
+    h1_Lines = "" # ハイライトする業を指定
+    lineNoStart = 1 # 行番号のはじまりを指定
+    lineNos = true # trueで行番号を表示
+    lineNumbersInTable = true # trueで行番号とコード部分に分割（tableないにコード配置）
+    noClasses = true # trueでインラインCSSで色付け（falseだとclass名がふよ）
+    style = "friendly" # 配色をスタイル名で指定
+    tabWidth = 4 # タブ幅を指定
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+############################# social site ########################
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "https://twitter.com/massa_potato"
+
+[[params.social]]
+title = "instagram"
+icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
+link = "https://www.instagram.com/ohsakifarm/"
+
+[[params.social]]
+title = "note"
+icon = "ti-write" # themify icon : https://themify.me/themify-icons
+link = "https://note.com/agrifeel_labo"
+
+# [[params.social]]
+# title = "github"
+# icon = "ti-github" # themify icon : https://themify.me/themify-icons
+# link = "https://github.com/Massasquash"
+
+[[params.social]]
+title = "rss"
+icon = "ti-rss" # themify icon : https://themify.me/themify-icons
+link = "https://nouka-it.com/index.xml"

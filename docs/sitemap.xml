@@ -2,10 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nouka-it.com/categories/</loc>
+    <loc>https://massa-potato.github.io/blog/</loc>
+    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nouka-it.com/tags/</loc>
+    <loc>https://massa-potato.github.io/categories/</loc>
+    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nouka-it.com/</loc>
+    <loc>https://massa-potato.github.io/</loc>
+    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/categories/%E8%BE%B2%E6%A5%ADit/</loc>
+    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/blog/2021/12/nouka-it-intro03/</loc>
+    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/blog/2021/11/nouka-it-intro02/</loc>
+    <lastmod>2021-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/blog/2021/11/nouka-it-intro01/</loc>
+    <lastmod>2021-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/featured/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/contact/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/about/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/featured/01/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/search/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://massa-potato.github.io/tags/</loc>
   </url>
 </urlset>

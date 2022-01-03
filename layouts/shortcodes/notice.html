@@ -1,0 +1,6 @@
+{{ $header := .Get "header" | default "【NOTE】" }}
+
+<div class="{{ .Get `style`}}">
+    <p><b>{{ $header }}</b></p>
+    <p>{{ .Inner }}</p>
+</div>

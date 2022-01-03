@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://nouka-it.com/"
+baseURL = "https://massa-potato.github.io/"
 publishDir = "docs" # 公開用ディレクトリをdocsに指定
 languageCode = "JA"
 title = "畑作農家のITツールDIY"

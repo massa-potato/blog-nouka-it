@@ -1,0 +1,31 @@
+// TOC
+.xToc {
+  font-size: smaller;
+  border-radius: 0.5em;
+  border: solid 1px lightgray;
+  padding: 0.5em 1em;
+  margin: 3em 3em;
+  line-height: 2;
+}
+.xToc_title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+}
+.xToc ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+.xToc li {
+  padding-top: 0 !important;
+}
+.xToc li > ul {
+  padding-left: 1em;
+  width: 100%;
+}
+.xToc a {
+  font-weight: normal;
+  display: block;
+  border-bottom: dashed 1px lightgray;
+}

@@ -1,7 +1,7 @@
 ---
 title: "農家のITツールDIYのススメ"
 description: "当ブログでテーマにしていく「農家のITツールDIY」について、その意味と魅力についてお伝えします。"
-slug: "nouka-it-intro01"
+slug: "nouka-it-intro1"
 date: "2021-11-16"
 image: "images/post/2021/11/nouka-it-intro01.jpeg"
 images: ["images/post/2021/11/nouka-it-intro01.jpeg"]

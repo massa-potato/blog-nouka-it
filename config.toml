@@ -63,7 +63,7 @@ paginate = 6
   # footer menu
   [[menu.footer]]
   name = "プロフィール"
-  URL = "profile"
+  URL = "about"
   weight = 1
 
   [[menu.footer]]

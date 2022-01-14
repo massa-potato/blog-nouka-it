@@ -11,6 +11,9 @@ type: "post"
 draft: false
 ---
 
+こんにちは！  
+おおさき（[@massa_potato](https://twitter.com/massa_potato)）です。
+
 前回は、当ブログのメインテーマである「農家のITツールDIY」についてお話しました。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://nouka-it.com/blog/2021/11/nouka-it-intro1/" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnouka-it.com%2Fblog%2F2021%2F11%2Fnouka-it-intro1%2F&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>

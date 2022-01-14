@@ -1,8 +1,8 @@
 ---
 title: "【初心者向け】ファイル共有に便利なGoogleドライブを始めよう"
-description: ""
+description: "便利な「Googleドライブ」の利点と始め方を初心者向けに解説します。"
 slug: "drive-intro"
-date: "2021-12-31"
+date: "2022-01-14"
 image: "images/post/2022/01/drive-intro.png"
 images: ["images/post/2022/01/drive-intro.png"]
 categories: 

@@ -36,11 +36,11 @@ type : "about"
 
 これまでプログラミング・ノーコードで作ってきたものを一部紹介します。
 
-#### （１）作業時間の記録・集計 LINE bot
+#### （１）作業時間の記録・集計LINE bot
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/7E7hLtS-GmE" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no" allow="encrypted-media;"></iframe></div>
 
-共同で利用している収穫機の利用組合での作業時間の集計に制作しました。  
+共同で利用している収穫機の利用組合での作業時間の集計にPython + Spreadsheetで制作しました。  
 これまで紙に書いていた日報をスマホでの入出力ができるようになりました。  
 30代〜60代の生産者6名で活用しています。
 
@@ -48,7 +48,7 @@ type : "about"
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://note.com/agrifeel_labo/n/na82d72cd3b82" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnote.com%2Fagrifeel_labo%2Fn%2Fna82d72cd3b82&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
-当農場の甜菜の育苗管理のために制作しました。  
+当農場の甜菜の育苗管理のためにGAS + Spreadsheetで制作しました。  
 温度記録計「T&D おんどとり」で取ったデータを整形してLINEに通知し、温度管理に役立てています。
 
 #### （３）QRコードを使った収穫物の管理システム
@@ -56,16 +56,16 @@ type : "about"
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://note.com/agrifeel_labo/n/n634ed062db1c" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnote.com%2Fagrifeel_labo%2Fn%2Fn634ed062db1c&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 当農場の馬鈴薯の収穫物管理のために制作しました。  
-スチールコンテナにQRコードをつけて、スマホで読み取ることで収穫日や収量の管理ができるスマホアプリを制作しています。
+スチールコンテナにQRコードをつけて、スマホで読み取ることで収穫日や収量の管理ができるスマホアプリをノーコードツールGlideで制作しています。
   
 <br>
 <br>
 
 |  スキル | 活用  |
 | ---- | ---- |
-|  Google Apps Script（GAS）  | Googleドライブ・スプレッドシート操作やLINE bot制作 |
-|  Python | PDF作成などちょっとしたPC操作の自動化 |
-| Glide | ノーコードで簡易的なスマホアプリの作成 |
+| Google Apps Script（GAS） | Googleドライブ・スプレッドシート操作やLINE bot制作 |
+| Python | PDF作成、ファイル整理などちょっとしたパソコン操作の自動化 |
+| Glide | ノーコードで簡易的なスマホアプリ制作 |
 | Hugo | このブログはHugo + GitHub Pagesで公開中（テーマ：[liva-hugo](https://github.com/gethugothemes/liva-hugo)） |
 
 ### 好きなこと

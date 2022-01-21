@@ -20,9 +20,13 @@
         <img src="{{ .Params.Image | absURL }}" class="img-fluid w-100 mb-4" alt="{{ .Title | markdownify }}">
         {{ end }}
 
+        {{ partial "share" . }}
+
         <div class="content mb-5">
           {{ .Content }}
         </div>
+
+        {{ partial "share" . }}
 
         <!-- comments -->
         {{ template "_internal/disqus.html" . }}

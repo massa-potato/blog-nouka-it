@@ -6,8 +6,6 @@ date: "2022-01-14"
 image: "images/post/2022/01/drive-intro.png"
 images: ["images/post/2022/01/drive-intro.png"]
 categories: 
-  - "初心者向け"
-Tags:
   - "Googleドライブ"
 type: "post"
 draft: false

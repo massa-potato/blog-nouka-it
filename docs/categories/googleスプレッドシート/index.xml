@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Googleスプレッドシート on 畑作農家のITツールDIY</title>
+    <link>https://nouka-it.com/categories/google%E3%82%B9%E3%83%97%E3%83%AC%E3%83%83%E3%83%89%E3%82%B7%E3%83%BC%E3%83%88/</link>
+    <description>Recent content in Googleスプレッドシート on 畑作農家のITツールDIY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>JA</language>
+    <lastBuildDate>Fri, 21 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nouka-it.com/categories/google%E3%82%B9%E3%83%97%E3%83%AC%E3%83%83%E3%83%89%E3%82%B7%E3%83%BC%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【初心者向け】Googleスプレッドシートでデータ管理を始めよう</title>
+      <link>https://nouka-it.com/blog/2022/01/spreadsheet-intro/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/01/spreadsheet-intro/</guid>
+      <description>こんにちは！
+おおさき（@massa_potato）です。
+今回の記事では、アプリ制作のためのデータ管理に便利な 「Googleスプレッドシート」 の特徴と始め方について、初心者向けに解説していきます。
+おそらく 「たまにエクセルを使うことがある」というような方にとっては、表計算ソフトの基本をおさらいしながらスプレッドシートの導入ができる内容かな、と思います。
+一方で業務で既にエクセルをバリバリ使っているという方には、だいぶ物足りない内容だと思います。適度に飛ばしちゃってください。
+スプレッドシートを始めるには、事前準備としてGoogleアカウントが必要になります。
+また「Googleドライブ」の中にスプレッドシートを作成していくことになるので、これらアカウントやドライブの準備がまだの方は、前回記事を参考に用意しておいてくださいね。</description>
+    </item>
+    
+  </channel>
+</rss>

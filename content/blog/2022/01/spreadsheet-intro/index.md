@@ -2,12 +2,10 @@
 title: "【初心者向け】Googleスプレッドシートでデータ管理を始めよう"
 description: "データ管理に便利な「Googleスプレッドシート」の特徴や始め方、表計算ソフトのキホンを初心者向けに整理しました。"
 slug: "spreadsheet-intro"
-date: "2022-01-18"
+date: "2022-01-21"
 image: "images/post/2022/01/spreadsheet-intro.png"
 images: ["images/post/2022/01/spreadsheet-intro.png"]
 categories: 
-  - "初心者向け"
-Tags:
   - "Googleスプレッドシート"
 type: "post"
 draft: false

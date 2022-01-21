@@ -6,7 +6,7 @@ date: "2021-11-20"
 image: "images/post/2021/11/nouka-it-intro02.jpeg"
 images: ["images/post/2021/11/nouka-it-intro02.jpeg"]
 categories: 
-  - "農業IT"
+  - "農業のIT活用"
 type: "post"
 draft: false
 ---

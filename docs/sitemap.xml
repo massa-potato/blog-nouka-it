@@ -3,18 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nouka-it.com/blog/</loc>
-    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nouka-it.com/categories/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nouka-it.com/tags/google%E3%82%B9%E3%83%97%E3%83%AC%E3%83%83%E3%83%89%E3%82%B7%E3%83%BC%E3%83%88/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nouka-it.com/tags/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nouka-it.com/blog/2022/01/spreadsheet-intro/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nouka-it.com/categories/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nouka-it.com/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nouka-it.com/tags/google%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96/</loc>
     <lastmod>2022-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nouka-it.com/blog/2022/01/drive-intro/</loc>
-    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nouka-it.com/categories/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91/</loc>
-    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nouka-it.com/</loc>
     <lastmod>2022-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nouka-it.com/categories/%E8%BE%B2%E6%A5%ADit/</loc>
@@ -43,7 +55,5 @@
   </url><url>
     <loc>https://nouka-it.com/search/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url><url>
-    <loc>https://nouka-it.com/tags/</loc>
   </url>
 </urlset>

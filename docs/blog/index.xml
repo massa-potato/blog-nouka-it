@@ -6,7 +6,22 @@
     <description>Recent content in Blogs on 畑作農家のITツールDIY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>JA</language>
-    <lastBuildDate>Fri, 14 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nouka-it.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nouka-it.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【初心者向け】Googleスプレッドシートでデータ管理を始めよう</title>
+      <link>https://nouka-it.com/blog/2022/01/spreadsheet-intro/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/01/spreadsheet-intro/</guid>
+      <description>こんにちは！
+おおさき（@massa_potato）です。
+今回の記事では、アプリ制作のためのデータ管理に便利な 「Googleスプレッドシート」 の特徴と始め方について、初心者向けに解説していきます。
+おそらく 「たまにエクセルを使うことがある」というような方にとっては、表計算ソフトの基本をおさらいしながらスプレッドシートの導入ができる内容かな、と思います。
+一方で業務で既にエクセルをバリバリ使っているという方には、だいぶ物足りない内容だと思います。適度に飛ばしちゃってください。
+スプレッドシートを始めるには、事前準備としてGoogleアカウントが必要になります。
+また「Googleドライブ」の中にスプレッドシートを作成していくことになるので、これらアカウントやドライブの準備がまだの方は、前回記事を参考に用意しておいてくださいね。</description>
+    </item>
+    
     <item>
       <title>【初心者向け】ファイル共有に便利なGoogleドライブを始めよう</title>
       <link>https://nouka-it.com/blog/2022/01/drive-intro/</link>

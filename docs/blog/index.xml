@@ -6,7 +6,19 @@
     <description>Recent content in Blogs on 畑作農家のITツールDIY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>JA</language>
-    <lastBuildDate>Fri, 28 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nouka-it.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Feb 2022 18:00:00 +0900</lastBuildDate><atom:link href="https://nouka-it.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【初心者向け】スプレッドシートで簡単なデータベースを作る方法</title>
+      <link>https://nouka-it.com/blog/2022/spreadsheet-intro03/</link>
+      <pubDate>Fri, 04 Feb 2022 18:00:00 +0900</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/spreadsheet-intro03/</guid>
+      <description>今回の記事では、Googleスプレッドシートに簡単な入力操作を行いながら、ITを使ってデータを管理する際の基本となる「データベース」「テーブル」といった考え方に触れていきたいと思います。
+前回の記事でスプレッドシートの新規作成のやり方と表計算ソフトの基本的な考え方について触れていますので、そちらも合わせて参考にしてみてください。
+ それでは、見ていきましょう！
+目次  スプレッドシートに入力するデータを決める スプレッドシート名を変更する シート名の変更と追加をする セルにデータを入力する コンピュータが扱いやすいデータの形式とは？ まとめ    スプレッドシートに入力するデータを決める さっそく始めていきたいのですが、入力を始める前にまずはスプレッドシートに「どんなデータをまとめておくのか」を決めておきましょう。</description>
+    </item>
+    
     <item>
       <title>【初心者向け】Googleスプレッドシートでデータ管理を始めよう</title>
       <link>https://nouka-it.com/blog/2022/spreadsheet-intro02/</link>

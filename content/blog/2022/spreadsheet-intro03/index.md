@@ -1,6 +1,6 @@
 ---
 title: "【初心者向け】スプレッドシートで簡単なデータベースを作る方法"
-description: "スプレッドシートに簡単な入力操作を行いながら「データベース」や「テーブル」について解説します。"
+description: "スプレッドシートに簡単な入力操作を行いながら「データベース」や「テーブル」といったデータ管理の基本について解説します。"
 slug: "spreadsheet-intro03"
 date: "2022-02-04T18:00:00"
 image: "images/post/2022/spreadsheet-intro03.png"
@@ -11,9 +11,11 @@ type: "post"
 draft: false
 ---
 
-今回の記事では、Googleスプレッドシートに簡単な入力操作を行いながら、ITでデータを管理する際の基本の考え方を見ていきたいと思います。
+今回の記事では、Googleスプレッドシートに簡単な入力操作を行いながら、ITでデータを管理する際の基本となる「データベース」「テーブル」といった考え方に触れていきたいと思います。
 
-前回の記事でスプレッドシートの新規作成・表計算ソフトの基本的な考え方について触れていますので、そちらも合わせて参考にしてみてくださいね。
+前回の記事でスプレッドシートの新規作成のやり方と表計算ソフトの基本的な考え方について触れていますので、そちらも合わせて参考にしてみてください。
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://nouka-it.com/blog/2022/spreadsheet-intro02/" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnouka-it.com%2Fblog%2F2022%2Fspreadsheet-intro02%2F&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 それでは、見ていきましょう！
 

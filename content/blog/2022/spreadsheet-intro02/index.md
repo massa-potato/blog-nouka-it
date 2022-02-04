@@ -19,6 +19,8 @@ draft: false
 
 Googleスプレッドシートってなに？どんなことができるの？と言う方は、前回記事を参考にしてみてくださいね。
 
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://nouka-it.com/blog/2022/spreadsheet-intro01/" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnouka-it.com%2Fblog%2F2022%2Fspreadsheet-intro01%2F&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
 それでは、見ていきましょう。
 
 {{< toc >}}

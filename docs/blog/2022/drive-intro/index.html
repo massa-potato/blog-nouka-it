@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="JA"><head>
+  <meta charset="utf-8">
+  <title>畑作農家のITツールDIY</title>
+
+  
+  <meta property="og:title" content="【初心者向け】ファイル共有に便利なGoogleドライブを始めよう" />
+<meta property="og:description" content="資料の共有などに便利な「Googleドライブ」の利点と、始め方を初心者向けに解説します。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nouka-it.com/blog/2022/drive-intro/" /><meta property="og:image" content="https://nouka-it.com/images/post/2022/drive-intro.png" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-01-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-01-14T00:00:00+00:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nouka-it.com/images/post/2022/drive-intro.png"/>
+
+<meta name="twitter:title" content="【初心者向け】ファイル共有に便利なGoogleドライブを始めよう"/>
+<meta name="twitter:description" content="資料の共有などに便利な「Googleドライブ」の利点と、始め方を初心者向けに解説します。"/>
+
+
+  
+  <script src="//kitchen.juicer.cc/?color=k3QPnmGvdMI=" async></script>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="資料の共有などに便利な「Googleドライブ」の利点と、始め方を初心者向けに解説します。">
+  <meta name="author" content="おおさき">
+  <meta name="generator" content="Hugo 0.91.2" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/scss/style.min.css" media="screen">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://nouka-it.com"><img class="img-fluid"
+          src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/massa_potato"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/ohsakifarm/"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://note.com/agrifeel_labo"><i class="ti-write"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://nouka-it.com/index.xml"><i class="ti-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://nouka-it.com"><img class="img-fluid"
+            src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/about">プロフィール</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/blog">記事一覧</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/contact">お問い合わせ</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://nouka-it.com/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/google%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96"
+          class="text-primary">Googleドライブ</a>
+        
+        <h2>【初心者向け】ファイル共有に便利なGoogleドライブを始めよう</h2>
+        <div class="mb-3 post-meta">
+          
+          
+          
+          <span>2022-01-14</span>
+          
+        </div>
+        
+        <img src="https://nouka-it.com/images/post/2022/drive-intro.png" class="img-fluid w-100 mb-4" alt="【初心者向け】ファイル共有に便利なGoogleドライブを始めよう">
+        
+
+        
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f&text=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e5%85%b1%e6%9c%89%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aaGoogle%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e5%85%b1%e6%9c%89%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aaGoogle%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f&t=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e5%85%b1%e6%9c%89%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aaGoogle%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e5%85%b1%e6%9c%89%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aaGoogle%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        <div class="content mb-5">
+          <p>突然ですが、皆さんは普段パソコンで作成したファイルや仕事で必要な資料などをどのように管理していますか？</p>
+<p>パソコンにそのまま保存している方も多いと思いますが、最近では「クラウドストレージ」と呼ばれる、インターネットを使ってファイルの保存・共有ができるアプリもたくさんあります。</p>
+<p>例えば、現場作業に出ているタイミングで、家にある資料を確認したくなる時もあるかと思います。</p>
+<p>そんな時にとても便利なサービスの一つが、今回お話する <strong>「Googleドライブ」</strong> です。</p>
+<p>今回の記事では、このGoogleドライブの特徴と始め方をカンタンにご紹介したいと思います。</p>
+<p>これから始める方向けの記事になりますので、既に知っているよという方、導入が済んでいる方は飛ばしてくださいね。</p>
+<aside class="xToc">
+  <header class="xToc_title">目次</header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#googleドライブとは">Googleドライブとは</a></li>
+    <li><a href="#ドライブを使う利点">ドライブを使う利点</a></li>
+    <li><a href="#ドライブを始めよう">ドライブを始めよう</a></li>
+    <li><a href="#メニューを確認してみよう">メニューを確認してみよう</a></li>
+    <li><a href="#おわりに">おわりに</a></li>
+  </ul>
+</nav>
+</aside>
+<h2 id="googleドライブとは">Googleドライブとは</h2>
+<p>Googleドライブは簡単に言うと、Google社が提供している <strong>「インターネット経由でファイルの保存場所を提供してくれているサービス」</strong> です。</p>
+<p>ファイルの保存場所というのは、パソコンに保存する際のフォルダみたいなイメージを持ってもらえると良いかなと思います。</p>
+<p>似たサービスに「Dropbox」や「iCloud」などがありますね。<br>
+これらは実際に使っている方も多くいらっしゃるのではないでしょうか？</p>
+<p>冒頭でも触れた通り、このようなファイル共有の仕組みは一般に <strong>「クラウドストレージ」</strong> と呼ばれていて、Googleドライブもこの仲間、ということになります。</p>
+<p>Googleドライブを活用するのはとても簡単で、Googleアカウント（Gmailアドレス）さえ準備しておけば、誰でも基本的には無料で使い始める事ができます。</p>
+<p>ガッツリ使う方向けの有料プランもありますが、無料でも15GBの容量があるため（2022年1月時点)、個人用途なら無料でも十分活用することができるのかなと思います。</p>
+<p>このように準備も簡単で、しかも無料で様々な便利サービスを使えるのがGoogleドライブの特徴です。</p>
+<h2 id="ドライブを使う利点">ドライブを使う利点</h2>
+<p>Googleドライブを活用すると、ざっくり次のような事ができるようになります。
+<br><br><br>
+<strong>(１)複数の端末からファイルを開く事ができる</strong></p>
+<p><strong>(２)他の人ともファイル共有が簡単にできる</strong></p>
+<p><strong>(３)「スプレッドシート」「フォーム」など様々な機能を活用できる</strong>
+<br><br><br>
+1つ目と2つ目は、どちらかというとクラウドストレージの一般的な利点ですね。<br>
+一方で3つ目は、Googleサービスならではの利点になります。</p>
+<p>例えば僕は基本的に、受け取った営農に必要なFAX資料やすぐに取り出したい情報はpdfにして、このGoogleドライブに一元化するようにしています。</p>
+<p>そうすることで、資料が必要になった時にスマホからサッと確認することができるようになるし、農場内での情報共有も簡単になるのです。</p>
+<p>それぞれの利点を、具体的に紹介していきますね。</p>
+<h3>(１)複数の端末からファイルを開く事ができる</h3>
+<p>冒頭でもお伝えした通り、インターネットの繋がっている場所なら自分の持っているスマホやタブレット、パソコンなどどれからでもファイルを閲覧・編集する事ができます。</p>
+<p>いつでもどこでも同じ資料を確認できるのはとても便利ですね。</p>
+<p><em>⬇︎図：いつでも資料を確認</em>
+<img src="./001.png" alt="ドライブサンプル画像"></p>
+<h3>(２)他の人ともファイル共有が簡単にできる</h3>
+<p>自分だけでなく、他の人と共有したい場合にもクラウドストレージはとても便利です。<br>
+保存したファイルごとに共有のためのURLリンクが作成されるので、そのURLをコピーしてメールやLINEで送ってあげれば良いのです。</p>
+<p>例えば「一部のグループメンバーでワード・エクセル資料を共同で編集」して「他のメンバーは閲覧のみ」みたいな場合でも、バッチリ対応できます。</p>
+<p><em>⬇︎図：ファイルの共有もリンクで簡単</em>
+<img src="./002.png" alt="ドライブファイル共有"></p>
+<h3>(３)「ドキュメント」「スプレッドシート」など様々な機能を活用できる</h3>
+<p>Googleドライブを使うことで、ファイル共有だけでない便利なGoogleサービスを利用することが簡単にできるようになります。</p>
+<p>例えば、先程挙げたワードファイルの共同編集には、Microsoftのワードと互換性のある「Googleドキュメント」を使います。<br>
+簡単にWeb上でアンケートを取る事ができる「Googleフォーム」なんかも特徴的です。<br>
+これらはどれもWebブラウザでとても手軽に使う事ができます。</p>
+<p><em>⬇︎図：Googleドキュメントで資料作成</em>
+<img src="./003.png" alt="ドキュメントサンプル"></p>
+<p>当ブログでは、データの整理やちょっとしたアプリ制作に <strong>「Googleスプレッドシート」</strong> という表計算ができるサービスをフル活用していくことになります。</p>
+<p>これはちょっとした自動化を行うGASプログラミングやノーコードアプリ制作ともとても相性が良いので、ぜひ活用していきましょう！</p>
+<h2 id="ドライブを始めよう">ドライブを始めよう</h2>
+<p>解説はこのくらいにして、ここからはGoogleドライブを実際に使っていきましょう。</p>
+<p>ドライブを使うには <strong>Googleアカウント（Gmailアドレス）</strong> が必要になるので、持っていない人は<a href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1&amp;hl=ja&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp">こちら</a>から準備しておいてくださいね。</p>
+<p>アカウントが準備できたら、 <strong>まずはブラウザで「Googleドライブ」と検索、または下記のリンクにアクセス</strong> してください。</p>
+<p><a href="https://www.google.com/intl/ja_jp/drive/">仕事や個人で使えるクラウド ストレージ - Google ドライブ</a></p>
+<p>Googleドライブの公式サイトが開かれます。</p>
+<p><img src="./004.png" alt="Googleドライブ公式ページ"></p>
+<p>右上か左下に表示されている <strong>「ドライブに移動」</strong> をクリックしてみましょう。</p>
+<p><img src="./005.png" alt="Googleドライブ公式「ドライブに移動」の場所"></p>
+<p>すると、次の画像のように「マイドライブ」という自分のアカウントのGoogleドライブにアクセスすることができます。</p>
+<p><img src="./006.png" alt="マイドライブ"></p>
+<p>これだけで、ドライブ利用することができます。とても簡単ですね。</p>
+<p>今は何もデータがないので空っぽですが、ここにどんどん自分のファイルを作成していくことになります。</p>
+<h2 id="メニューを確認してみよう">メニューを確認してみよう</h2>
+<p>左側のメニューのようなところを眺めてみましょう。</p>
+<p>下の方に <strong>「保存容量」</strong> という項目がありますね。</p>
+<p><img src="./007.png" alt="メニューの確認"></p>
+<p>最初の方で紹介した通り、無料プランではこのドライブに合計15GBまでのファイルを保存することができます。</p>
+<p>これはGoogleアカウントごとの容量なので、仮にもう1つ自分のアカウントを作成すれば、実質さらに15GBのストレージが無料で活用できちゃいます。</p>
+<p>メニューの下の「保存容量を購入」から有料プランに変更して保存容量を増やすことができますが、僕も無料プランで十分活用できているので、はじめのうちは無料のままで十分だと思います。</p>
+<p>それでは次に、メニューの一番上にある <strong>「＋新規」</strong> をクリックしてみましょう。</p>
+<p>すると、下図のように色々な項目が出現します。</p>
+<p><img src="./008.png" alt="「新規」で表示されるメニュー"></p>
+<p>このメニューから、自身で新しくファイルやフォルダを作成することができます。</p>
+<p>手元のパソコンにあるファイルやフォルダをこのドライブに入れる（アップロードする）こともできますし、「ドキュメント」「スプレッドシート」などのGoogleサービスのファイルを新規作成することができます。</p>
+<p>これらの詳しい活用については、別記事で見てくことにしましょう。</p>
+<h2 id="おわりに">おわりに</h2>
+<p>さて、今回の記事では、Googleドライブの特徴と導入の仕方を解説しました。</p>
+<p>当ブログでは、主にこのドライブとスプレッドシートを利用して農場の情報を整理していきますので、ぜひ試してみてくださいね。</p>
+<p>次回は早速、「スプレッドシート」を使っていきたいと思います。</p>
+
+        </div>
+
+        
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f&text=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e5%85%b1%e6%9c%89%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aaGoogle%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e5%85%b1%e6%9c%89%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aaGoogle%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f&t=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e5%85%b1%e6%9c%89%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aaGoogle%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fdrive-intro%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e5%85%b1%e6%9c%89%e3%81%ab%e4%be%bf%e5%88%a9%e3%81%aaGoogle%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://nouka-it.com"><img src="https://nouka-it.com/images/banner.png" alt="畑作農家のITツールDIY"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/massa_potato">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/ohsakifarm/">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://note.com/agrifeel_labo">note</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/index.xml">rss</a></li>
+          
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/about">プロフィール</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/blog">記事一覧</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/contact">お問い合わせ</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2021 大崎真裕 All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://nouka-it.com/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://nouka-it.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/slick/slick.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/fuse.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/mark.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://nouka-it.com/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>

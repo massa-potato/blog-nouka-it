@@ -1,11 +1,12 @@
 .sns_parent {
-    text-align: center;
-    padding: 1rem 0 3rem 0;
-}
-
+    position: relative;
+  }
 .sns_section {
-    display: inline-block;
-    width: 42%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
 }
 .sns_button {
     float: left;

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="JA"><head>
+  <meta charset="utf-8">
+  <title>畑作農家のITツールDIY</title>
+
+  
+  <meta property="og:title" content="【初心者向け】Googleスプレッドシートでデータ管理を始めよう" />
+<meta property="og:description" content="スプレッドシートの新規作成のやり方と、表計算ソフトで登場する３つの要素について解説します。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nouka-it.com/blog/2022/spreadsheet-intro02/" /><meta property="og:image" content="https://nouka-it.com/images/post/2022/spreadsheet-intro02.png" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-01-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-01-28T00:00:00+00:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nouka-it.com/images/post/2022/spreadsheet-intro02.png"/>
+
+<meta name="twitter:title" content="【初心者向け】Googleスプレッドシートでデータ管理を始めよう"/>
+<meta name="twitter:description" content="スプレッドシートの新規作成のやり方と、表計算ソフトで登場する３つの要素について解説します。"/>
+
+
+  
+  <script src="//kitchen.juicer.cc/?color=k3QPnmGvdMI=" async></script>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="スプレッドシートの新規作成のやり方と、表計算ソフトで登場する３つの要素について解説します。">
+  <meta name="author" content="おおさき">
+  <meta name="generator" content="Hugo 0.91.2" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/scss/style.min.css" media="screen">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://nouka-it.com"><img class="img-fluid"
+          src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/massa_potato"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/ohsakifarm/"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://note.com/agrifeel_labo"><i class="ti-write"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://nouka-it.com/index.xml"><i class="ti-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://nouka-it.com"><img class="img-fluid"
+            src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/about">プロフィール</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/blog">記事一覧</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/contact">お問い合わせ</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://nouka-it.com/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88"
+          class="text-primary">Googleスプレッドシート</a>
+        
+        <h2>【初心者向け】Googleスプレッドシートでデータ管理を始めよう</h2>
+        <div class="mb-3 post-meta">
+          
+          
+          
+          <span>2022-01-28</span>
+          
+        </div>
+        
+        <img src="https://nouka-it.com/images/post/2022/spreadsheet-intro02.png" class="img-fluid w-100 mb-4" alt="【初心者向け】Googleスプレッドシートでデータ管理を始めよう">
+        
+
+        
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f&text=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91Google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e3%83%87%e3%83%bc%e3%82%bf%e7%ae%a1%e7%90%86%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91Google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e3%83%87%e3%83%bc%e3%82%bf%e7%ae%a1%e7%90%86%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f&t=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91Google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e3%83%87%e3%83%bc%e3%82%bf%e7%ae%a1%e7%90%86%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91Google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e3%83%87%e3%83%bc%e3%82%bf%e7%ae%a1%e7%90%86%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        <div class="content mb-5">
+          <p>今回の記事では、アプリ制作のためのデータ管理に便利な <strong>「Googleスプレッドシート」</strong> の始め方と表計算ソフトの基本的な考え方について、初心者向けに解説していきます。</p>
+<p>おそらく 「たまにエクセルを使うことがある」というような方にとっては、基本をおさらいしながら取り組める内容かな、と思います。</p>
+<p>一方で業務で既にエクセルをバリバリ使っているという方には、だいぶ物足りない内容だと思います。適度に飛ばしちゃってください。</p>
+<p>Googleスプレッドシートってなに？どんなことができるの？と言う方は、前回記事を参考にしてみてくださいね。</p>
+<p>それでは、見ていきましょう。</p>
+<aside class="xToc">
+  <header class="xToc_title">目次</header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#スプレッドシートを始めるための準備">スプレッドシートを始めるための準備</a></li>
+    <li><a href="#スプレッドシートを新規作成してみよう">スプレッドシートを新規作成してみよう</a></li>
+    <li><a href="#表計算ソフトで抑えておきたい３つの要素">表計算ソフトで抑えておきたい３つの要素</a>
+      <ul>
+        <li><a href="#１スプレッドシート">(１)スプレッドシート</a></li>
+        <li><a href="#２シート">(２)シート</a></li>
+        <li><a href="#３セル">(３)セル</a></li>
+      </ul>
+    </li>
+    <li><a href="#まとめ">まとめ</a></li>
+  </ul>
+</nav>
+</aside>
+<h2 id="スプレッドシートを始めるための準備">スプレッドシートを始めるための準備</h2>
+<p>スプレッドシートを始めるには、事前準備としてGoogleアカウントが必要になります。</p>
+<p>また「Googleドライブ」の中にスプレッドシートを作成していくことになるので、これらアカウントやドライブの準備がまだの方は、こちらの記事を参考に用意しておいてくださいね。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://nouka-it.com/blog/2022/01/drive-intro/" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnouka-it.com%2Fblog%2F2022%2F01%2Fdrive-intro%2F&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<h2 id="スプレッドシートを新規作成してみよう">スプレッドシートを新規作成してみよう</h2>
+<p>今回はさわりだけになりますが、試しにスプレッドシートを新規作成してみたいと思います。</p>
+<p>まずは、先ほど準備をしたドライブのマイページを、Webブラウザで開いている状態にしておいてください。</p>
+<p><img src="./001.png" alt="マイドライブのページ"></p>
+<p>次にページの左上にある <strong>「＋新規」</strong> をクリックして、出てくるメニューの「Googleスプレッドシート」から「空白のスプレッドシート」を選択してみてみます。<br>
+（「Googleスプレッドシート」をクリックするだけでも大丈夫です。）</p>
+<p><img src="./002.png" alt="メニューからスプレッドシート新規作成"></p>
+<p>するとブラウザに新しいタブが開かれて、このような表がズラーっと並んだ画面が出てきましたね。</p>
+<p><img src="./003.png" alt="新規スプレッドシート"></p>
+<p>これだけで、スプレッドシートの新規作成が完了です。</p>
+<h2 id="表計算ソフトで抑えておきたい３つの要素">表計算ソフトで抑えておきたい３つの要素</h2>
+<p>ここで、スプレッドシートを扱う上で最低限知っておきたい要素を簡単に整理しておきますね。</p>
+<p>大きく、次の３つの要素を抑えておくと良いでしょう。</p>
+<p><strong>(１)スプレッドシート</strong><br>
+<strong>(２)シート</strong><br>
+<strong>(３)セル</strong></p>
+<p>表計算ソフトを使ったことのある方なら知っていると思うので、おさらいのつもりで見てみていただけたらと思います。</p>
+<p>画面上で見ると、それぞれ以下の場所が対応しているイメージです。</p>
+<p><img src="./004.png" alt="スプレッドシートの各要素"></p>
+<h3 id="１スプレッドシート">(１)スプレッドシート</h3>
+<p>まず「スプレッドシート」は一番大きなくくりで、 <strong>このスプレッドシートのファイル全体</strong> を指します。例えると、１冊のノートみたいなイメージです。</p>
+<p>エクセルでいうと「ブック」「ワークブック」と呼ばれる、１つのエクセルファイルに当たります。</p>
+<p>左上の「無題のスプレッドシート」と表示されているのがこのスプレッドシート名になり、この名前がそのままドライブに保存されるファイル名になります。</p>
+<p>また、作成したスプレッドシートには自動でURLが割り振られていて、それによりブラウザ上での表示ができるようになっています。</p>
+<p><img src="./005.png" alt="スプレッドシート名の解説"></p>
+<h3 id="２シート">(２)シート</h3>
+<p>次に「シート」は、<strong>スプレッドシートを構成する表形式の領域</strong> のことです。<br>
+スプレッドシートが１冊のノートと例えると、シートはその中身の各ページに対応するイメージでしょうか。</p>
+<p>エクセルでも同じく「シート」または「ワークシート」と呼ばれていますね。</p>
+<p>基本的に僕たちが画面上で作業をするのは、このシート上での作業になります。<br>
+シートは複数作成できるので、用途に分けてデータを管理することができます。</p>
+<p>画面の左下に「シート1」と表示されているのが、シート名にあたります。 ＋マークからシートを増やすことが可能です。</p>
+<p><img src="./006.png" alt="シート名の解説"></p>
+<h3 id="３セル">(３)セル</h3>
+<p>最後に、「セル」と呼ばれる部分は、シートの中の <strong>縦と横の網目状に整列している１つ１つの領域</strong> です。<br>
+マス目入りのノートを想像していただくと、開いたページのマス目一つ一つがセルにあたるイメージでしょうか。</p>
+<p>これはエクセルでも全く同じ呼び方をしていますね。</p>
+<p>セルの位置は、縦の「列」と横の「行」が交差する番号で表されます。</p>
+<p>列にはアルファベット、行には数字がそれぞれ割り振られていて、この組み合わせで１つのセルが特定できるようになっています。</p>
+<p>住所の番地みたいなもので、例えばセル「B4」というと「B列4行目」にあるセルを表すことになります。</p>
+<p><img src="./007.png" alt="セルの解説"></p>
+<h2 id="まとめ">まとめ</h2>
+<p>さて、今回はこのあたりまでになります。</p>
+<p>これから始める方向けに、Googleスプレッドシートの特徴と、表計算ソフトで押さえておきたい３つの要素について、簡単に見てきました。</p>
+<p>次回は、実際にスプレッドシートへのデータ入力を試していきたいと思います。</p>
+
+        </div>
+
+        
+
+<section class="section sns_parent">
+  <div class="container sns_section">
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f&text=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91Google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e3%83%87%e3%83%bc%e3%82%bf%e7%ae%a1%e7%90%86%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91Google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e3%83%87%e3%83%bc%e3%82%bf%e7%ae%a1%e7%90%86%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f&t=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91Google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e3%83%87%e3%83%bc%e3%82%bf%e7%ae%a1%e7%90%86%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro02%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91Google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e3%83%87%e3%83%bc%e3%82%bf%e7%ae%a1%e7%90%86%e3%82%92%e5%a7%8b%e3%82%81%e3%82%88%e3%81%86" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://nouka-it.com"><img src="https://nouka-it.com/images/banner.png" alt="畑作農家のITツールDIY"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/massa_potato">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/ohsakifarm/">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://note.com/agrifeel_labo">note</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/index.xml">rss</a></li>
+          
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/about">プロフィール</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/blog">記事一覧</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/contact">お問い合わせ</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2021 大崎真裕 All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://nouka-it.com/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://nouka-it.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/slick/slick.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/fuse.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/mark.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://nouka-it.com/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>

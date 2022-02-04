@@ -6,47 +6,55 @@
     <description>Recent content on 畑作農家のITツールDIY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>JA</language>
-    <lastBuildDate>Fri, 21 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nouka-it.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nouka-it.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【初心者向け】Googleスプレッドシートでデータ管理を始めよう</title>
-      <link>https://nouka-it.com/blog/2022/01/spreadsheet-intro/</link>
+      <link>https://nouka-it.com/blog/2022/spreadsheet-intro02/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/spreadsheet-intro02/</guid>
+      <description>今回の記事では、アプリ制作のためのデータ管理に便利な 「Googleスプレッドシート」 の始め方と表計算ソフトの基本的な考え方について、初心者向けに解説していきます。
+おそらく 「たまにエクセルを使うことがある」というような方にとっては、基本をおさらいしながら取り組める内容かな、と思います。
+一方で業務で既にエクセルをバリバリ使っているという方には、だいぶ物足りない内容だと思います。適度に飛ばしちゃってください。
+Googleスプレッドシートってなに？どんなことができるの？と言う方は、前回記事を参考にしてみてくださいね。
+それでは、見ていきましょう。
+目次  スプレッドシートを始めるための準備 スプレッドシートを新規作成してみよう 表計算ソフトで抑えておきたい３つの要素  (１)スプレッドシート (２)シート (３)セル   まとめ    スプレッドシートを始めるための準備 スプレッドシートを始めるには、事前準備としてGoogleアカウントが必要になります。</description>
+    </item>
+    
+    <item>
+      <title>【初心者向け】データ管理に便利なGoogleスプレッドシートの特徴</title>
+      <link>https://nouka-it.com/blog/2022/spreadsheet-intro01/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://nouka-it.com/blog/2022/01/spreadsheet-intro/</guid>
-      <description>こんにちは！
-おおさき（@massa_potato）です。
-今回の記事では、アプリ制作のためのデータ管理に便利な 「Googleスプレッドシート」 の特徴と始め方について、初心者向けに解説していきます。
-おそらく 「たまにエクセルを使うことがある」というような方にとっては、表計算ソフトの基本をおさらいしながらスプレッドシートの導入ができる内容かな、と思います。
-一方で業務で既にエクセルをバリバリ使っているという方には、だいぶ物足りない内容だと思います。適度に飛ばしちゃってください。
-スプレッドシートを始めるには、事前準備としてGoogleアカウントが必要になります。
-また「Googleドライブ」の中にスプレッドシートを作成していくことになるので、これらアカウントやドライブの準備がまだの方は、前回記事を参考に用意しておいてくださいね。</description>
+      <guid>https://nouka-it.com/blog/2022/spreadsheet-intro01/</guid>
+      <description>今回の記事では、業務データの整理に便利な 「Googleスプレッドシート」 の特徴について、これから始める方向けに解説していきます。
+読者の中には、同じ「表計算ソフト」のジャンルにある「Microsoftのエクセル」を活用している方も多いのではないかな、と思います。
+なのでエクセルとの比較も交えながら、メリットやデメリットなどを紹介していきたいと思います！
+目次  Googleスプレッドシートとは 表計算ソフトの役割とできること スプレッドシートのメリットとデメリット おわりに    Googleスプレッドシートとは スプレッドシートとは一言で言うと、 Google社が提供している「表計算ソフト（アプリ）」 のことです。</description>
     </item>
     
     <item>
       <title>【初心者向け】ファイル共有に便利なGoogleドライブを始めよう</title>
-      <link>https://nouka-it.com/blog/2022/01/drive-intro/</link>
+      <link>https://nouka-it.com/blog/2022/drive-intro/</link>
       <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://nouka-it.com/blog/2022/01/drive-intro/</guid>
-      <description>こんにちは！
-おおさき（@massa_potato）です。
-突然ですが、皆さんは普段パソコンで作成したファイルや仕事で必要な資料などをどのように管理していますか？
+      <guid>https://nouka-it.com/blog/2022/drive-intro/</guid>
+      <description>突然ですが、皆さんは普段パソコンで作成したファイルや仕事で必要な資料などをどのように管理していますか？
 パソコンにそのまま保存している方も多いと思いますが、最近では「クラウドストレージ」と呼ばれる、インターネットを使ってファイルの保存・共有ができるアプリもたくさんあります。
 例えば、現場作業に出ているタイミングで、家にある資料を確認したくなる時もあるかと思います。
 そんな時にとても便利なサービスの一つが、今回お話する 「Googleドライブ」 です。
 今回の記事では、このGoogleドライブの特徴と始め方をカンタンにご紹介したいと思います。
-これから始める方向けの記事になりますので、既に知っているよという方、導入が済んでいる方は飛ばしてくださいね。</description>
+これから始める方向けの記事になりますので、既に知っているよという方、導入が済んでいる方は飛ばしてくださいね。
+目次  Googleドライブとは ドライブを使う利点 ドライブを始めよう メニューを確認してみよう おわりに    Googleドライブとは Googleドライブは簡単に言うと、Google社が提供している 「インターネット経由でファイルの保存場所を提供してくれているサービス」 です。</description>
     </item>
     
     <item>
       <title>農業現場で取り組める小さなIT活用</title>
-      <link>https://nouka-it.com/blog/2021/12/nouka-it-intro03/</link>
+      <link>https://nouka-it.com/blog/2021/nouka-it-intro03/</link>
       <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://nouka-it.com/blog/2021/12/nouka-it-intro03/</guid>
-      <description>こんにちは！
-おおさき（@massa_potato）です。
-前回は、農家の僕がITツール制作をするようになった経緯についてお話しました。
+      <guid>https://nouka-it.com/blog/2021/nouka-it-intro03/</guid>
+      <description>前回は、農家の僕がITツール制作をするようになった経緯についてお話しました。
  二年前の僕は「ちょっと周りよりパソコンに詳しい」くらいの知識しかなく、農業のIT化にどうついていけば良いのかよくわからないまま、普段の農作業に取り組んでいました。
 もしかすると、同じようにモヤモヤしている方もいらっしゃるのではないでしょうか？
 今回は 農業現場で取り組める小さなIT活用 というテーマで、僕が感じている農業ITの課題感と、どういった視点で現場でITを活用していけば良いのかを具体的に考えてみたいと思います。
@@ -55,13 +63,11 @@
     
     <item>
       <title>農家の僕がITツール制作にハマった理由</title>
-      <link>https://nouka-it.com/blog/2021/11/nouka-it-intro02/</link>
+      <link>https://nouka-it.com/blog/2021/nouka-it-intro02/</link>
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://nouka-it.com/blog/2021/11/nouka-it-intro02/</guid>
-      <description>こんにちは！
-おおさき（@massa_potato）です。
-前回は、当ブログのメインテーマである「農家のITツールDIY」についてお話しました。
+      <guid>https://nouka-it.com/blog/2021/nouka-it-intro02/</guid>
+      <description>前回は、当ブログのメインテーマである「農家のITツールDIY」についてお話しました。
  素人がITツールを自作することの意味や魅力をお伝えできたかなと思います。
 今回は、農家の僕がITツール制作にハマった理由について、自己紹介やこれまでの経験を交えながらお話してみたいと思います。
 目次  家業の後継ぎとして就農 様々な経験を経て どう作業の記録を残すと良いのか？ 使いやすい農作業日誌アプリが欲しい ITツール制作の楽しさ おわりに    家業の後継ぎとして就農 僕は普段、北海道で畑作専業農家を営んでいます。</description>
@@ -69,13 +75,11 @@
     
     <item>
       <title>農家のITツールDIYのススメ</title>
-      <link>https://nouka-it.com/blog/2021/11/nouka-it-intro1/</link>
+      <link>https://nouka-it.com/blog/2021/nouka-it-intro1/</link>
       <pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://nouka-it.com/blog/2021/11/nouka-it-intro1/</guid>
-      <description>こんにちは！
-おおさき（@massa_potato）です。
-このたび、当ブログ「畑作農家のITツールDIY」を開設することになりました。
+      <guid>https://nouka-it.com/blog/2021/nouka-it-intro1/</guid>
+      <description>このたび、当ブログ「畑作農家のITツールDIY」を開設することになりました。
 農業現場で農作業に従事している僕が、ITツールやプログラミングを活用して小さく農場改善を行っていく過程を紹介していきたいと思います。
 今回ははじめての投稿になりますので、当ブログのメインテーマとなる 「農家のITツールDIY」というものについて 、一体どういうことなのか、またその魅力をお話していきたいと思います。
 目次  DIYとは何か 農業におけるDIY ITツールのDIYとは ITツールを自作して改善していく考え方 ITツールを自作する魅力と注意点 おわりに    DIYとは何か 「DIY」「Do It yourself」という言葉は、みなさんとても聞き慣れた言葉だと思います。</description>
@@ -88,6 +92,21 @@
       
       <guid>https://nouka-it.com/featured/01/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://nouka-it.com/%E5%9F%B7%E7%AD%86_%E8%BE%B2%E5%AE%B6it%E8%A8%98%E4%BA%8B_%E4%B8%8B%E6%9B%B8%E3%81%8D/00_hold/%E3%83%96%E3%83%AD%E3%82%B0%E5%9B%BA%E5%AE%9A%E3%83%9A%E3%83%BC%E3%82%B8/20211103_%E3%81%93%E3%81%AE%E3%83%95%E3%82%99%E3%83%AD%E3%82%AF%E3%82%99%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nouka-it.com/%E5%9F%B7%E7%AD%86_%E8%BE%B2%E5%AE%B6it%E8%A8%98%E4%BA%8B_%E4%B8%8B%E6%9B%B8%E3%81%8D/00_hold/%E3%83%96%E3%83%AD%E3%82%B0%E5%9B%BA%E5%AE%9A%E3%83%9A%E3%83%BC%E3%82%B8/20211103_%E3%81%93%E3%81%AE%E3%83%95%E3%82%99%E3%83%AD%E3%82%AF%E3%82%99%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
+      <description>小さなIT活用で快適な農場づくりを！ 本ブログの目的 「農業」といえば土や自然を相手にした肉体労働のイメージがありますが、実際にはそれだけではありません。 「百姓」とも呼ばれるように
+社会情勢や環境に考慮して長く続けられるように考えを巡らせたり、収穫量や気象データなどの数値・グラフを見て具体的に経営改善していくのも農業の仕事です。
+農家として生き残るためにはこれまでの職人的な「農業生産」の技術を維持しながら、より経営者的な「農業経営」を求められているように感じます。
+仕事の効率化や見える化をはかり、
+その目的のために、デジタルなITツールはこれらの課題と相性バッチリです。
+生産・販売の業務や事務作業の流れをスッキリ整理し、細かい効率化を積み重ねることで、時間と休みを計画的に作ったり、家族や従業員とのコミュニケーションを円滑にすることができます。
+その目的のための一つのアプローチとして、自身でITツールを制作する「プログラミング・ノーコードDIY」という、小さく身近なスマート農業の実践を提案します。</description>
     </item>
     
   </channel>

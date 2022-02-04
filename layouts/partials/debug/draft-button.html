@@ -1,0 +1,16 @@
+{{- if .Site.IsServer -}}
+<style>
+  .xDraftButton {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+    color: white !important;
+    background: green;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 0.5em;
+  }
+</style>
+<a href="/drafts/" class="xDraftButton">ドラフト記事一覧</a>
+{{- end }}

@@ -20,6 +20,7 @@
         <img src="{{ .Params.Image | absURL }}" class="img-fluid w-100 mb-4" alt="{{ .Title | markdownify }}">
         {{ end }}
 
+        {{ partial "author" . }}
         {{ partial "share" . }}
 
         <div class="content mb-5">

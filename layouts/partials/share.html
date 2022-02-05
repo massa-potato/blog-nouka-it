@@ -1,7 +1,8 @@
-{{ if ne .Params.share false}}
+{{ if eq .Params.type "post"}}
 <!-- use font awsome -->
 <section class="section sns_parent">
-  <div class="container sns_section">
+  <div class="sns_section">
+      <p class="text-center">記事をシェアする</p>
       <div class="sns_button twitter">
         <a href="http://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
       </div>

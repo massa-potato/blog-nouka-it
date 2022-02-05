@@ -1,0 +1,16 @@
+{{ if eq .Params.type "post"}}
+
+<section class="author-contaner">
+    <div class="text-center author-img">
+        {{ with .Site.GetPage "/about" }}
+        <h4 class="widget-title">執筆者</h4>
+        {{ if .Params.Image }}
+        <img src="{{ .Params.Image | absURL }}" alt=""
+        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+        {{ end }}
+        {{ end }}
+    </div>
+    <p class="text-center author-text">おおさき（<a href="https://twitter.com/massa_potato">@massa_potato</a>）</p>
+</section>
+
+{{ end }}

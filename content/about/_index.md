@@ -7,7 +7,7 @@ draft: false
 image: "images/author.jpg"
 
 # meta description
-description: "北海道十勝の畑作農家。パソコンに触れている時間が好きで、現場で役立つIT技術を学んでいます。DIY感覚で、自身で便利なものをつくる楽しさを発信していきたいです。"
+description: "北海道十勝の畑作農家。パソコンに触れている時間が好き。農作業を楽しく続けるため、現場で役立つIT技術を学んでいます。DIY感覚で自身で便利なものをつくる楽しさを発信していきたいです。"
 
 # type
 type : "about"

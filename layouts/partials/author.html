@@ -5,7 +5,7 @@
         {{ with .Site.GetPage "/about" }}
         <h4 class="widget-title">執筆者</h4>
         {{ if .Params.Image }}
-        <img src="{{ .Params.Image | absURL }}" alt=""
+        <img src="{{ .Params.Image | absURL }}" alt="" width=120 
         class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
         {{ end }}
         {{ end }}

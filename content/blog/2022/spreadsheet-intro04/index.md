@@ -1,6 +1,6 @@
 ---
 title: "【初心者向け】スプレッドシートで作った台帳の見た目を整えておこう"
-description: "「圃場台帳」を例に、行・列の削除、交互の背景色の適用のやり方を見ていきます。"
+description: "「圃場台帳」の作成を例に、スプレッドシートでの行・列の削除、交互の背景色の適用のやり方を見ていきます。"
 slug: "spreadsheet-intro04"
 date: "2022-02-11T18:00:00+0900"
 image: "images/post/2022/spreadsheet-intro04.png"

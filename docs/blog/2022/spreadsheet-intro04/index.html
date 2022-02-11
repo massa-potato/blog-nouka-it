@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="JA"><head>
+  <meta charset="utf-8">
+  <title>畑作農家のITツールDIY</title>
+
+  
+  <meta property="og:title" content="【初心者向け】スプレッドシートで作った台帳の見た目を整えておこう" />
+<meta property="og:description" content="「圃場台帳」を例に、行・列の削除、交互の背景色の適用のやり方を見ていきます。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nouka-it.com/blog/2022/spreadsheet-intro04/" /><meta property="og:image" content="https://nouka-it.com/images/post/2022/spreadsheet-intro04.png" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-02-11T18:00:00+09:00" />
+<meta property="article:modified_time" content="2022-02-11T18:00:00+09:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nouka-it.com/images/post/2022/spreadsheet-intro04.png"/>
+
+<meta name="twitter:title" content="【初心者向け】スプレッドシートで作った台帳の見た目を整えておこう"/>
+<meta name="twitter:description" content="「圃場台帳」を例に、行・列の削除、交互の背景色の適用のやり方を見ていきます。"/>
+
+
+  
+  <script src="//kitchen.juicer.cc/?color=k3QPnmGvdMI=" async></script>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="「圃場台帳」を例に、行・列の削除、交互の背景色の適用のやり方を見ていきます。">
+  <meta name="author" content="おおさき">
+  <meta name="generator" content="Hugo 0.91.2" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/scss/style.min.css" media="screen">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://nouka-it.com"><img class="img-fluid"
+          src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/massa_potato"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/ohsakifarm/"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://note.com/agrifeel_labo"><i class="ti-write"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://nouka-it.com/index.xml"><i class="ti-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://nouka-it.com"><img class="img-fluid"
+            src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/about">プロフィール</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/blog">記事一覧</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/contact">お問い合わせ</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://nouka-it.com/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/google%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88"
+          class="text-primary">Googleスプレッドシート</a>
+        
+        <h2>【初心者向け】スプレッドシートで作った台帳の見た目を整えておこう</h2>
+        <div class="mb-3 post-meta">
+          
+          
+          
+          <span>2022-02-11</span>
+          
+        </div>
+        
+        <img src="https://nouka-it.com/images/post/2022/spreadsheet-intro04.png" class="img-fluid w-100 mb-4" alt="【初心者向け】スプレッドシートで作った台帳の見た目を整えておこう">
+        
+
+        
+
+<section class="author-contaner">
+    <div class="text-center author-img">
+        
+        <h4 class="widget-title">執筆者</h4>
+        
+        <img src="https://nouka-it.com/images/author.jpg" alt="" width=120 
+        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+        
+        
+    </div>
+    <p class="text-center author-text">おおさき（<a href="https://twitter.com/massa_potato">@massa_potato</a>）</p>
+</section>
+
+
+        
+
+<section class="section sns_parent">
+  <div class="sns_section">
+      <p class="text-center">⬇︎ぜひ記事のシェアもお願いします！</p>
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f&text=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%e5%8f%b0%e5%b8%b3%e3%81%ae%e8%a6%8b%e3%81%9f%e7%9b%ae%e3%82%92%e6%95%b4%e3%81%88%e3%81%a6%e3%81%8a%e3%81%93%e3%81%86 " target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%e5%8f%b0%e5%b8%b3%e3%81%ae%e8%a6%8b%e3%81%9f%e7%9b%ae%e3%82%92%e6%95%b4%e3%81%88%e3%81%a6%e3%81%8a%e3%81%93%e3%81%86" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f&t=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%e5%8f%b0%e5%b8%b3%e3%81%ae%e8%a6%8b%e3%81%9f%e7%9b%ae%e3%82%92%e6%95%b4%e3%81%88%e3%81%a6%e3%81%8a%e3%81%93%e3%81%86" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%e5%8f%b0%e5%b8%b3%e3%81%ae%e8%a6%8b%e3%81%9f%e7%9b%ae%e3%82%92%e6%95%b4%e3%81%88%e3%81%a6%e3%81%8a%e3%81%93%e3%81%86" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        <div class="content mb-5">
+          <p>前回は「圃場台帳」を題材にして、スプレッドシートによく活用するデータをまとめて、簡単な台帳を作るやり方をみてみました。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://nouka-it.com/blog/2022/spreadsheet-intro03/" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnouka-it.com%2Fblog%2F2022%2Fspreadsheet-intro03%2F&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<p>「データベース」「テーブル」といった、パソコン上でデータを用意する際の基本的な考え方についても整理しました。</p>
+<p>今回はスプレッドシートの機能を利用して、作成した台帳の見た目を整えておくやり方を見ておきたいと思います。</p>
+<aside class="xToc">
+  <header class="xToc_title">目次</header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前回のおさらい">前回のおさらい</a></li>
+    <li><a href="#今回やること">今回やること</a></li>
+    <li><a href="#１不要な空白行列を削除する">(１)不要な空白行・列を削除する</a>
+      <ul>
+        <li><a href="#１行１列だけ追加したい場合">１行（１列）だけ追加したい場合</a></li>
+        <li><a href="#１行１列だけ削除したい場合">１行（１列）だけ削除したい場合</a></li>
+      </ul>
+    </li>
+    <li><a href="#2交互の背景色を適用する">(2)「交互の背景色」を適用する</a></li>
+    <li><a href="#まとめ">まとめ</a></li>
+  </ul>
+</nav>
+</aside>
+<h2 id="前回のおさらい">前回のおさらい</h2>
+<p>前回の記事では、サンプルとして農場の田畑を管理するための「圃場台帳」をスプレッドシートで作成しました。<br>
+その中には、「圃場リスト」と「設定シート」という２つのシートに分けてそれぞれに整列したデータを入力しました。</p>
+<p><em>⬇︎（１）「圃場リスト」</em></p>
+<p><img src="./01.png" alt="圃場リスト"></p>
+<p><em>⬇︎（２）「設定シート」</em></p>
+<p><img src="./02.png" alt="設定シート"></p>
+<p>このようにデータを表の形に配置した形を <strong>「テーブル」</strong> と呼び、コンピュータが活用しやすいデータ形式になるのでしたね。</p>
+<p>そしてこのテーブルには以下のような基本ルールがあるのでした。</p>
+<br>
+<p><em><strong>【テーブルの基本ルール】</strong></em></p>
+<ul>
+<li><strong>１行目には「見出し行」を用意する</strong></li>
+<li><strong>２行目以降に「１行=１件」としてデータを追加していく</strong></li>
+<li><strong>間に空行や空列は入れない</strong></li>
+<li><strong>セルの結合を使わない</strong></li>
+<li><strong>１シートには１つのテーブルのみ</strong></li>
+</ul>
+<br>
+<p>皆さん自身の業務データを扱う際も、このようなテーブルの基本ルールを守っているかチェックしてみてくださいね。</p>
+<h2 id="今回やること">今回やること</h2>
+<p>実は、この状態でデータとしては十分なので、台帳としては完成といえます。</p>
+<p>ただ、このままだと見た目が味気なくて使いづらそうと感じませんか？</p>
+<p>真っ白のままだと今後データ数が増えてくると、スプレッドシート上で編集をする際に行を間違えてしまったりしてしまう可能性があります。</p>
+<p>そこで、以下のように表を見やすく整えておきたいと思います。</p>
+<p><em>⬇︎見やすく整えた「圃場リスト」</em></p>
+<p><img src="./03_1.png" alt="見やすく整えた圃場リスト"></p>
+<p><em>⬇︎見やすく整えた「設定シート」</em></p>
+<p><img src="./03_2.png" alt="見やすく整えた設定シート"></p>
+<p>表の各行が色違いになって、綺麗に見やすくなりましたね。<br>
+また、周囲の余計な空白セルも削除して、データが入っているテーブルの部分だけを残すようにしました。</p>
+<p>具体的には、以下のようなことを行っています。</p>
+<p><strong>(１)空白行・列の削除</strong><br>
+<strong>(２)交互の背景色の適用</strong></p>
+<p>どちらもスプレッドシートの機能を使ってカンタンにできますので、そのやり方を見ていきましょう！</p>
+<h2 id="１不要な空白行列を削除する">(１)不要な空白行・列を削除する</h2>
+<p>最初に、表の外側にある不要な行・列の削除からやっておきましょう。</p>
+<p>まず、データが入っていない最初の行全体（ここでは7行目）を選択した状態にします。<br>
+行全体を選択するには、シートの一番左の行番号をクリックします。<br>
+（単一のセルではなく、行全体が青色に反転していればOKです。）</p>
+<p>この状態で、<strong>Macなら「Cmd + Shift + ↓」（Windowsなら「Ctrl + Shift + ↓」）</strong> のキーを押してみましょう。</p>
+<p><img src="./04.png" alt="7行目全体を選択"></p>
+<p>すると、シートの一番下の行まで一気に選択することができます。</p>
+<p><img src="./05.png" alt="一番下の行まで一気に選択"></p>
+<p>次に、反転している行かセルの上どこでも良いので、<strong>右クリック</strong>するとメニューが出てきます。そのメニューの中から <strong>「行◯ - ◯を削除」</strong> を選択しましょう。</p>
+<p><img src="./06.png" alt="右クリックメニュー"></p>
+<p>すると、このようにデータのある範囲の行だけを残して、不要な行を削除することができました。</p>
+<p><img src="./07.png" alt="不要な行を削除した"></p>
+<p>同じ要領で、縦の列についても同様に、空白列を削除することができます。</p>
+<p>データが入っていない最初の列全体（ここではJ列）を選択した状態にして、 <strong>Macなら「Cmd + Shift + →」（Windowsなら「Ctrl + Shift + →」）</strong> を押します。<br>
+行の時と同じように一番右の列まで選択されるので、 <strong>右クリックメニューから「列◯ - ◯を削除」</strong> をクリックしましょう。</p>
+<p>以下のように、行・列ともデータの入ったテーブル部分だけが残っていれば完成です。</p>
+<p><img src="./09.png" alt="不要な行・列を削除した"></p>
+<h3 id="１行１列だけ追加したい場合">１行（１列）だけ追加したい場合</h3>
+<p>空白行が全て無くなってしまいましたが、</p>
+<p>「新たに行を追加して圃場のデータを増やしたい」<br>
+「列を増やして項目を増やしたい」</p>
+<p>というような場合もあるかと思います。</p>
+<p>そういった時には、簡単に１行ずつ・１列ずつ挿入することができます。</p>
+<p>行を挿入したい場所の行番号をクリックして、先ほどと同じように行全体を選択します。</p>
+<p><img src="./10.png" alt="行全体の選択"></p>
+<p>反転している領域のどこかで右クリックして、出てくるメニューの <strong>「下に１行挿入」</strong> （もしくは <strong>「上に１行挿入」</strong> でも可）をクリックすると・・・</p>
+<p><img src="./11.png" alt="メニューから１行挿入"></p>
+<p>このように、新しい行を追加することができました。</p>
+<p><img src="./12.png" alt="行の挿入が完了"></p>
+<p>列についても、同様の手順で１行だけ挿入が可能です。</p>
+<h3 id="１行１列だけ削除したい場合">１行（１列）だけ削除したい場合</h3>
+<p>先ほど試しに挿入した行は今は不要なので、削除しておきましょう。</p>
+<p>これまでと同じく削除したい行全体を選択したのち右クリックでメニューを出し、<strong>「行を削除」</strong> を選択すると、不要な行を１行だけ削除することができます。</p>
+<p><img src="./13.png" alt="行の削除"></p>
+<p>こちらも列についても同様の手順で１行だけ削除ができます</p>
+<h2 id="2交互の背景色を適用する">(2)「交互の背景色」を適用する</h2>
+<p>次にいよいよ、テーブルに色をつけてみましょう。</p>
+<p>地道にセルや行を１つずつ色付け・・・なんてことは、もちろんしません。<br>
+スプレッドシートには <strong>「交互の背景色」</strong> という便利な機能が用意されています。</p>
+<p>そのためにまず、テーブル全体のセルを選択します。</p>
+<p><strong>選択したいセル範囲を左上から右下へドラッグ（ここではA1からI6）</strong> すると、指定した範囲全体を選択できます。<br>
+ですが今回のように１シートに１テーブルだけが入っている場合は、もっと簡単な方法があります。<strong>シートの左上にある行番号と列番号が交差する空白部分をクリック</strong>すると、シート内の全てのセルをまとめて選択することが可能です。</p>
+<p><img src="./15.png" alt="表全体を選択"></p>
+<p>全てのセルが反転されていることを確認したら、スプレッドシートの上部のメニューバーから <strong>「表示形式」</strong> をクリックし、出てくるメニューから <strong>「交互の背景色」</strong> を選択します。</p>
+<p><img src="./16.png" alt="メニューバーから「交互の背景色」を選択"></p>
+<p>すると画面右側に、設定画面が表示されます。</p>
+<p><img src="./17.png" alt="交互の背景色の設定画面"></p>
+<p>「スタイル」の項目中で「デフォルトスタイル」として用意されているどれか好きなカラーを選択してみましょう。</p>
+<p>「ヘッダー」「フッター」のチェックはそのままで大丈夫です。<br>
+（デフォルトでは「ヘッダー」のみにチェックが入っているはずです。）</p>
+<p>ここでは、黄色のスタイルを選択してみました。</p>
+<p><img src="./18.png" alt="黄色のスタイルを適用"></p>
+<p>最後に <strong>「完了」をクリック</strong> すると交互の背景色が適用されます。</p>
+<p><img src="./19.png" alt="交互の背景色が完了"></p>
+<p>１行目のヘッダーが強調され、各データについては行の色が交互になり見やすい表ができましたね。</p>
+<p>これで、テーブルの見た目の設定も完了です。</p>
+<p>解説は省略しますが、もう一つの「設定シート」も同じ要領で、不要な行・列の削除と、交互の背景色の適用を試してみてくださいね。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>今回は、スプレッドシートの機能を使って、表の見た目を整えてみました。<br>
+まだまだ便利な機能はたくさんありますが、また必要な時があれば解説したいと思います。</p>
+<p>さて、ここまでの一連の記事で、スプレッドシートの簡単な操作方法を学びながら、業務に必要な台帳を作る流れを見てきました。</p>
+<p>実は、ここまではデジタル化のための準備段階にすぎません。<br>
+次回以降で、用意したデータからアプリ化をしていく流れを見ていきたいと思いますので、お楽しみに！</p>
+
+        </div>
+
+        
+
+<section class="section sns_parent">
+  <div class="sns_section">
+      <p class="text-center">⬇︎ぜひ記事のシェアもお願いします！</p>
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f&text=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%e5%8f%b0%e5%b8%b3%e3%81%ae%e8%a6%8b%e3%81%9f%e7%9b%ae%e3%82%92%e6%95%b4%e3%81%88%e3%81%a6%e3%81%8a%e3%81%93%e3%81%86 " target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%e5%8f%b0%e5%b8%b3%e3%81%ae%e8%a6%8b%e3%81%9f%e7%9b%ae%e3%82%92%e6%95%b4%e3%81%88%e3%81%a6%e3%81%8a%e3%81%93%e3%81%86" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f&t=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%e5%8f%b0%e5%b8%b3%e3%81%ae%e8%a6%8b%e3%81%9f%e7%9b%ae%e3%82%92%e6%95%b4%e3%81%88%e3%81%a6%e3%81%8a%e3%81%93%e3%81%86" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fspreadsheet-intro04%2f&title=%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%e5%8f%b0%e5%b8%b3%e3%81%ae%e8%a6%8b%e3%81%9f%e7%9b%ae%e3%82%92%e6%95%b4%e3%81%88%e3%81%a6%e3%81%8a%e3%81%93%e3%81%86" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://nouka-it.com"><img src="https://nouka-it.com/images/banner.png" alt="畑作農家のITツールDIY"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/massa_potato">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/ohsakifarm/">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://note.com/agrifeel_labo">note</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/index.xml">rss</a></li>
+          
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/about">プロフィール</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/blog">記事一覧</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/contact">お問い合わせ</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2021 大崎真裕 All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://nouka-it.com/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://nouka-it.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/slick/slick.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/fuse.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/mark.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://nouka-it.com/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>

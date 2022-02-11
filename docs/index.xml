@@ -6,7 +6,19 @@
     <description>Recent content on 畑作農家のITツールDIY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>JA</language>
-    <lastBuildDate>Fri, 04 Feb 2022 18:00:00 +0900</lastBuildDate><atom:link href="https://nouka-it.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Feb 2022 18:00:00 +0900</lastBuildDate><atom:link href="https://nouka-it.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【初心者向け】スプレッドシートで作った台帳の見た目を整えておこう</title>
+      <link>https://nouka-it.com/blog/2022/spreadsheet-intro04/</link>
+      <pubDate>Fri, 11 Feb 2022 18:00:00 +0900</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/spreadsheet-intro04/</guid>
+      <description>前回は「圃場台帳」を題材にして、スプレッドシートによく活用するデータをまとめて、簡単な台帳を作るやり方をみてみました。
+ 「データベース」「テーブル」といった、パソコン上でデータを用意する際の基本的な考え方についても整理しました。
+今回はスプレッドシートの機能を利用して、作成した台帳の見た目を整えておくやり方を見ておきたいと思います。
+目次  前回のおさらい 今回やること (１)不要な空白行・列を削除する  １行（１列）だけ追加したい場合 １行（１列）だけ削除したい場合   (2)「交互の背景色」を適用する まとめ    前回のおさらい 前回の記事では、サンプルとして農場の田畑を管理するための「圃場台帳」をスプレッドシートで作成しました。</description>
+    </item>
+    
     <item>
       <title>【初心者向け】スプレッドシートで簡単な台帳を作る方法</title>
       <link>https://nouka-it.com/blog/2022/spreadsheet-intro03/</link>

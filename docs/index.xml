@@ -134,5 +134,18 @@ Googleスプレッドシートってなに？どんなことができるの？�
 その目的のための一つのアプローチとして、自身でITツールを制作する「プログラミング・ノーコードDIY」という、小さく身近なスマート農業の実践を提案します。</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://nouka-it.com/%E5%9F%B7%E7%AD%86_%E8%BE%B2%E5%AE%B6it%E8%A8%98%E4%BA%8B_%E4%B8%8B%E6%9B%B8%E3%81%8D/field-ledger-glideapp-02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nouka-it.com/%E5%9F%B7%E7%AD%86_%E8%BE%B2%E5%AE%B6it%E8%A8%98%E4%BA%8B_%E4%B8%8B%E6%9B%B8%E3%81%8D/field-ledger-glideapp-02/</guid>
+      <description>## ノーコード開発ツール「Glide」
+「Glide」は、Googleスプレッドシートに用意したデータをもとにサクッとWebやスマホ上で動くアプリを作ることができる、便利なアプリ制作ツールの一つです。
+ノーコード開発ツールにもいろいろありますが、Glideはその中でも特に直感的でカンタンにアプリを制作することができるのが特徴です。
+基本的には無料で使えますが、データ数が多くなったり機能を増やしたい場合は有料
+Glide – Create apps &amp;amp; websites without code.</description>
+    </item>
+    
   </channel>
 </rss>

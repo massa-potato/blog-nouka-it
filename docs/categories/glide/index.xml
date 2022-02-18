@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>glide on 畑作農家のITツールDIY</title>
+    <link>https://nouka-it.com/categories/glide/</link>
+    <description>Recent content in glide on 畑作農家のITツールDIY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>JA</language>
+    <lastBuildDate>Fri, 18 Feb 2022 18:00:00 +0900</lastBuildDate><atom:link href="https://nouka-it.com/categories/glide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【はじめてのGlide】農場のマップを表示する「圃場台帳アプリ」を作ろう</title>
+      <link>https://nouka-it.com/blog/2022/field-ledger-glideapp01/</link>
+      <pubDate>Fri, 18 Feb 2022 18:00:00 +0900</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/field-ledger-glideapp01/</guid>
+      <description>今回から数回に分けて、 ノーコード開発ツール「Glide」 を活用したちょっとしたアプリを作ってみたいと思います。
+Glideは、 Googleスプレッドシートに用意したデータをもとにサクッとWebやスマホ上で動くアプリを作ることができる、便利なアプリ制作ツール の一つです。
+ノーコードなので、プログラミングも不要。
+一度使い方に慣れれば、アイデア次第でちょっとしたツールがすぐにできちゃいます。
+今回の記事では、これから制作していくアプリの概要などについてお伝えします。
+それでは早速、みていきましょう！</description>
+    </item>
+    
+  </channel>
+</rss>

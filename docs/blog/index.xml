@@ -6,7 +6,18 @@
     <description>Recent content in Blogs on 畑作農家のITツールDIY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>JA</language>
-    <lastBuildDate>Fri, 18 Feb 2022 18:00:00 +0900</lastBuildDate><atom:link href="https://nouka-it.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nouka-it.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ある１地点の座標（緯度と経度）を取得する方法【Googleマップ】</title>
+      <link>https://nouka-it.com/blog/2022/googlemap-coordinate/</link>
+      <pubDate>Sat, 19 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/googlemap-coordinate/</guid>
+      <description>本記事では、パソコン版のGoogleマップを使ってある１地点の座標（緯度と経度）を調べる方法を紹介します。
+なかなか普段使う機会はないかもしれませんが、ノーコード開発ツール「Glide」で地図アプリを制作する場合に地点の座標をが必要になるので、その方法を簡単にまとめました。
+目次  パソコン版Googleマップで座標を取得する マップの表示を衛星画像に切り替える まとめ    パソコン版Googleマップで座標を取得する まずは、パソコンのWebブラウザで Googleマップ を開きましょう。</description>
+    </item>
+    
     <item>
       <title>【はじめてのGlide】農場のマップを表示する「圃場台帳アプリ」を作ろう</title>
       <link>https://nouka-it.com/blog/2022/field-ledger-glideapp01/</link>
@@ -19,17 +30,6 @@ Glideは、 Googleスプレッドシートに用意したデータをもとに�
 一度使い方に慣れれば、アイデア次第でちょっとしたツールがすぐにできちゃいます。
 今回の記事では、これから制作していくアプリの概要などについてお伝えします。
 それでは早速、みていきましょう！</description>
-    </item>
-    
-    <item>
-      <title>ある１地点の座標（緯度と経度）を取得する方法【Googleマップ】</title>
-      <link>https://nouka-it.com/blog/2022/googlemap-coordinate/</link>
-      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://nouka-it.com/blog/2022/googlemap-coordinate/</guid>
-      <description>本記事では、パソコン版のGoogleマップを使ってある１地点の座標（緯度と経度）を調べる方法を紹介します。
-なかなか普段使う機会はないかもしれませんが、ノーコード開発ツール「Glide」で地図アプリを制作する場合に地点の座標をが必要になるので、その方法を簡単にまとめました。
-目次  パソコン版Googleマップで座標を取得する マップの表示を衛星画像に切り替える まとめ    パソコン版Googleマップで座標を取得する まずは、パソコンのWebブラウザで Googleマップ を開きましょう。</description>
     </item>
     
     <item>

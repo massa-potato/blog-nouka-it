@@ -1,12 +1,12 @@
 ---
 title: "【はじめてのGlide】アプリ制作に必要なデータをスプレッドシートで用意しよう"
 description: "ノーコードアプリ開発ツール「Glide」を使って初めてのアプリ制作をしていきます。今回はGlideでアプリ制作をするために必要なスプレッドシートのデータを、サンプルデータを眺めてみます。"
-slug: "field-ledger-glideapp02"
+slug: "field-ledger-glideapp03"
 date: "2022-02-20T18:00:00+0900"
-image: "images/post/2022/field-ledger-glideapp02.png"
-images: ["images/post/2022/field-ledger-glideapp02.png"]
+image: "images/post/2022/field-ledger-glideapp03.png"
+images: ["images/post/2022/field-ledger-glideapp03.png"]
 categories: 
-  - ""
+  - "はじめてのGlide"
 type: "post"
 draft: true
 ---

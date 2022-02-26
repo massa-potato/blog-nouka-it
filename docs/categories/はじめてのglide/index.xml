@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>はじめてのGlide on 畑作農家のITツールDIY</title>
+    <link>https://nouka-it.com/categories/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEglide/</link>
+    <description>Recent content in はじめてのGlide on 畑作農家のITツールDIY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>JA</language>
+    <lastBuildDate>Fri, 25 Feb 2022 18:00:00 +0900</lastBuildDate><atom:link href="https://nouka-it.com/categories/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEglide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【はじめてのGlide】共有スプレッドシートをマイドライブにコピーする方法</title>
+      <link>https://nouka-it.com/blog/2022/field-ledger-glideapp02/</link>
+      <pubDate>Fri, 25 Feb 2022 18:00:00 +0900</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/field-ledger-glideapp02/</guid>
+      <description>本シリーズは、ノーコード開発ツール「Glide」 を使ってはじめてのアプリ制作をしていくシリーズです。
+前回の記事で、これから制作していきたい農場のマップを表示する「圃場台帳アプリ」の概要を、現場での課題感も交えながら紹介しました。
+ 今回は、Glideでアプリ制作をするために必要なデータをスプレッドシートで準備していきたいと思います。
+・・・といっても、どんなデータを用意したら良いのか、最初は難しいですよね。
+このブログではまずはGlideでサクッとアプリ制作ができることを体感していただきたいので、僕の方でサンプルデータの入ったスプレッドシートを用意しました。
+本記事では、このスプレッドシートを皆さん自身のドライブにコピーして使えるようにする方法をお伝えします。
+スプレッドシートのコピーのやり方と、ドライブでのフォルダ作成のやり方を紹介しますので、既に知っているよという方は飛ばしちゃってくださいね。
+それでは、見ていきましょう！</description>
+    </item>
+    
+    <item>
+      <title>【はじめてのGlide】農場のマップを表示する「圃場台帳アプリ」を作ろう</title>
+      <link>https://nouka-it.com/blog/2022/field-ledger-glideapp01/</link>
+      <pubDate>Fri, 18 Feb 2022 18:00:00 +0900</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/field-ledger-glideapp01/</guid>
+      <description>今回から数回に分けて、 ノーコード開発ツール「Glide」 を活用したちょっとしたアプリを作ってみたいと思います。
+Glideは、 Googleスプレッドシートに用意したデータをもとにサクッとWebやスマホ上で動くアプリを作ることができる、便利なアプリ制作ツール の一つです。
+ノーコードなので、プログラミングも不要。
+一度使い方に慣れれば、アイデア次第でちょっとしたツールがすぐにできちゃいます。
+今回の記事では、これから制作していくアプリの概要などについてお伝えします。
+それでは早速、みていきましょう！</description>
+    </item>
+    
+  </channel>
+</rss>

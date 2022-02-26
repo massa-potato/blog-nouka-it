@@ -6,9 +6,25 @@
     <description>Recent content on 畑作農家のITツールDIY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>JA</language>
-    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nouka-it.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Feb 2022 18:00:00 +0900</lastBuildDate><atom:link href="https://nouka-it.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ある１地点の座標（緯度と経度）を取得する方法【Googleマップ】</title>
+      <title>【はじめてのGlide】共有スプレッドシートをマイドライブにコピーする方法</title>
+      <link>https://nouka-it.com/blog/2022/field-ledger-glideapp02/</link>
+      <pubDate>Fri, 25 Feb 2022 18:00:00 +0900</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/field-ledger-glideapp02/</guid>
+      <description>本シリーズは、ノーコード開発ツール「Glide」 を使ってはじめてのアプリ制作をしていくシリーズです。
+前回の記事で、これから制作していきたい農場のマップを表示する「圃場台帳アプリ」の概要を、現場での課題感も交えながら紹介しました。
+ 今回は、Glideでアプリ制作をするために必要なデータをスプレッドシートで準備していきたいと思います。
+・・・といっても、どんなデータを用意したら良いのか、最初は難しいですよね。
+このブログではまずはGlideでサクッとアプリ制作ができることを体感していただきたいので、僕の方でサンプルデータの入ったスプレッドシートを用意しました。
+本記事では、このスプレッドシートを皆さん自身のドライブにコピーして使えるようにする方法をお伝えします。
+スプレッドシートのコピーのやり方と、ドライブでのフォルダ作成のやり方を紹介しますので、既に知っているよという方は飛ばしちゃってくださいね。
+それでは、見ていきましょう！</description>
+    </item>
+    
+    <item>
+      <title>ある地点の座標（緯度と経度）を取得する方法【Googleマップ】</title>
       <link>https://nouka-it.com/blog/2022/googlemap-coordinate/</link>
       <pubDate>Sat, 19 Feb 2022 00:00:00 +0000</pubDate>
       

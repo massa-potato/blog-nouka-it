@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="JA"><head>
+  <meta charset="utf-8">
+  <title>畑作農家のITツールDIY</title>
+
+  
+  <meta property="og:title" content="【はじめてのGlide】共有スプレッドシートをマイドライブにコピーする方法" />
+<meta property="og:description" content="ノーコードアプリ開発ツール「Glide」を使って初めてのアプリ制作をしていきます。今回はサンプルデータの入ったスプレッドシートを自分のGoogleドライブにコピーする方法を整理しました。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nouka-it.com/blog/2022/field-ledger-glideapp02/" /><meta property="og:image" content="https://nouka-it.com/images/post/2022/field-ledger-glideapp02.png" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-02-25T18:00:00+09:00" />
+<meta property="article:modified_time" content="2022-02-25T18:00:00+09:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nouka-it.com/images/post/2022/field-ledger-glideapp02.png"/>
+
+<meta name="twitter:title" content="【はじめてのGlide】共有スプレッドシートをマイドライブにコピーする方法"/>
+<meta name="twitter:description" content="ノーコードアプリ開発ツール「Glide」を使って初めてのアプリ制作をしていきます。今回はサンプルデータの入ったスプレッドシートを自分のGoogleドライブにコピーする方法を整理しました。"/>
+
+
+  
+  <script src="//kitchen.juicer.cc/?color=k3QPnmGvdMI=" async></script>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="ノーコードアプリ開発ツール「Glide」を使って初めてのアプリ制作をしていきます。今回はサンプルデータの入ったスプレッドシートを自分のGoogleドライブにコピーする方法を整理しました。">
+  <meta name="author" content="おおさき">
+  <meta name="generator" content="Hugo 0.91.2" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/scss/style.min.css" media="screen">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://nouka-it.com"><img class="img-fluid"
+          src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/massa_potato"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/ohsakifarm/"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://note.com/agrifeel_labo"><i class="ti-write"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://nouka-it.com/index.xml"><i class="ti-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://nouka-it.com"><img class="img-fluid"
+            src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/about">プロフィール</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/blog">記事一覧</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/contact">お問い合わせ</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://nouka-it.com/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeglide"
+          class="text-primary">はじめての glide</a>
+        
+        <h2>【はじめてのGlide】共有スプレッドシートをマイドライブにコピーする方法</h2>
+        <div class="mb-3 post-meta">
+          
+          
+          
+          <span>2022-02-25</span>
+          
+        </div>
+        
+        <img src="https://nouka-it.com/images/post/2022/field-ledger-glideapp02.png" class="img-fluid w-100 mb-4" alt="【はじめてのGlide】共有スプレッドシートをマイドライブにコピーする方法">
+        
+
+        
+
+<section class="author-contaner">
+    <div class="text-center author-img">
+        
+        <h4 class="widget-title">執筆者</h4>
+        
+        <img src="https://nouka-it.com/images/author.jpg" alt="" width=120 
+        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+        
+        
+    </div>
+    <p class="text-center author-text">おおさき（<a href="https://twitter.com/massa_potato">@massa_potato</a>）</p>
+</section>
+
+
+        
+
+<section class="section sns_parent">
+  <div class="sns_section">
+      <p class="text-center">⬇︎ぜひ記事のシェアもお願いします！</p>
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f&text=%e3%80%90%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeGlide%e3%80%91%e5%85%b1%e6%9c%89%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%82%92%e3%83%9e%e3%82%a4%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%81%ab%e3%82%b3%e3%83%94%e3%83%bc%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95 " target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f&title=%e3%80%90%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeGlide%e3%80%91%e5%85%b1%e6%9c%89%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%82%92%e3%83%9e%e3%82%a4%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%81%ab%e3%82%b3%e3%83%94%e3%83%bc%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f&t=%e3%80%90%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeGlide%e3%80%91%e5%85%b1%e6%9c%89%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%82%92%e3%83%9e%e3%82%a4%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%81%ab%e3%82%b3%e3%83%94%e3%83%bc%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f&title=%e3%80%90%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeGlide%e3%80%91%e5%85%b1%e6%9c%89%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%82%92%e3%83%9e%e3%82%a4%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%81%ab%e3%82%b3%e3%83%94%e3%83%bc%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        <div class="content mb-5">
+          <p>本シリーズは、<strong>ノーコード開発ツール「Glide」</strong> を使ってはじめてのアプリ制作をしていくシリーズです。</p>
+<p>前回の記事で、これから制作していきたい農場のマップを表示する「圃場台帳アプリ」の概要を、現場での課題感も交えながら紹介しました。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://nouka-it.com/blog/2022/field-ledger-glideapp01/" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnouka-it.com%2Fblog%2F2022%2Ffield-ledger-glideapp01%2F&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<p>今回は、<strong>Glideでアプリ制作をするために必要なデータをスプレッドシートで準備</strong>していきたいと思います。</p>
+<p>・・・といっても、どんなデータを用意したら良いのか、最初は難しいですよね。</p>
+<p>このブログではまずはGlideでサクッとアプリ制作ができることを体感していただきたいので、僕の方でサンプルデータの入ったスプレッドシートを用意しました。</p>
+<p>本記事では、このスプレッドシートを皆さん自身のドライブにコピーして使えるようにする方法をお伝えします。<br>
+スプレッドシートのコピーのやり方と、ドライブでのフォルダ作成のやり方を紹介しますので、既に知っているよという方は飛ばしちゃってくださいね。</p>
+<p>それでは、見ていきましょう！</p>
+<aside class="xToc">
+  <header class="xToc_title">目次</header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#サンプルデータを開いてみる">サンプルデータを開いてみる</a></li>
+    <li><a href="#共有されたスプレッドシートを手元にコピーする方法">共有されたスプレッドシートを手元にコピーする方法</a>
+      <ul>
+        <li><a href="#１自身のマイドライブにスプレッドシートのコピーを作成する">(１)自身のマイドライブにスプレッドシートのコピーを作成する</a></li>
+        <li><a href="#２ドライブでフォルダを作成してファイルを移動する">(２)ドライブでフォルダを作成してファイルを移動する</a></li>
+      </ul>
+    </li>
+    <li><a href="#まとめ">まとめ</a></li>
+  </ul>
+</nav>
+</aside>
+<h2 id="サンプルデータを開いてみる">サンプルデータを開いてみる</h2>
+<p>さっそく、サンプルデータを開いてみましょう。<br>
+このサンプルデータは、<strong>今回制作する「圃場管理アプリ」に必要な情報がまとまったデータベース</strong>にあたります。</p>
+<p>以下のURLリンクを開いてみてください。</p>
+<p><a href="https://docs.google.com/spreadsheets/d/1C9FJe1HflN4jUFQ-Zo69KphSSxlzpmzQyZwayMEeUc8/edit?usp=sharing" target="_blank">https://docs.google.com/spreadsheets/d/1C9FJe1HflN4jUFQ-Zo69KphSSxlzpmzQyZwayMEeUc8/edit?usp=sharing</a></p>
+<p>リンクを開くと、このようなスプレッドシートがブラウザに表示されるかと思います。</p>
+<p><img src="./001_1.png" alt="image-20220222225323876"></p>
+<p>すでにデータの入ったスプレッドシートが現れましたね。</p>
+<p>これは、僕の方で作成したスプレッドシートを <strong>「共有機能」</strong> を使って皆さんと共有している形になります。</p>
+<p>共有機能を使うとこのようにスプレッドシートに直接アクセスできるURLが発行されるので、それをメールやメッセージで送ったりシェアすることで、複数人で同一のスプレッドシートを操作することができるんです。</p>
+<h2 id="共有されたスプレッドシートを手元にコピーする方法">共有されたスプレッドシートを手元にコピーする方法</h2>
+<p>さて、この開いたスプレッドシートを眺めていると、何やら <strong>メニューバーの下に「閲覧のみ」という緑色のマーク</strong> が表示されているのに気付きましたか？</p>
+<p><img src="./001_2.png" alt="image-20220222225323876"></p>
+<p>これは、僕の方でスプレッドシートの共有をする際に「閲覧権限のみ」として共有しているためです。</p>
+<p>実はこのままだと、皆さんはスプレッドシートを見ることはできますが、手元でこのスプレッドシートを編集することができません。<br>
+試しにどこかのセルをクリックして編集しようとしても、何も入力ができないはずです。</p>
+<p>そこで皆さんが手元でこのスプレッドシートを扱えるようにするために、自身のドライブへのコピーを作成しておく必要があります。</p>
+<h3 id="１自身のマイドライブにスプレッドシートのコピーを作成する">(１)自身のマイドライブにスプレッドシートのコピーを作成する</h3>
+<p>具体的なやり方を見ていきましょう。<br>
+まずは <strong>メニューバーの「ファイル」から「コピーを作成」を選択</strong> してみてください。</p>
+<p><img src="./002.png" alt="image-20220222225408062"></p>
+<p>すると、このように中央にポップアップが出てきます。</p>
+<p><img src="./003.png" alt="image-20220220190909851"></p>
+<p>ここで、自身のドライブに保存するファイルの名前と、保存先のフォルダを決めることができます。</p>
+<p>フォルダはとりあえずそのまま（マイドライブ）でいきましょう。<br>
+ファイルの名前はなんでも良いのですが、ここでは「圃場台帳アプリsample」として、右下の「OK」をクリックします。</p>
+<p><img src="./004.png" alt="image-20220220191605695"></p>
+<p>するとブラウザに新たなタブ（ページ）が開かれて、サンプルと同じ内容のスプレッドシートが開かれるはずです。</p>
+<p><img src="./005.png" alt="image-20220222225815456"></p>
+<p>先ほどと違い、<strong>メニューバーの下の「閲覧のみ」の緑色のマークが消えている</strong> はずです。<br>
+セルへの入力もできるようになっているはずなので、試しにどこかのセルを変更してみたりしてください。</p>
+<p>コピー元のスプレッドシートを開いたままだと紛らわしいので、タブの「×」マークをクリックしてページを消して、新たにコピーしたスプレッドシートだけをブラウザに残しておきましょう。</p>
+<h3 id="２ドライブでフォルダを作成してファイルを移動する">(２)ドライブでフォルダを作成してファイルを移動する</h3>
+<p>次に、自身のドライブで今回のアプリ制作のためのプロジェクトフォルダを作成しておきましょう。</p>
+<p>こうやってフォルダ分けしておくことで、今後ドライブがファイルで溢れてぐちゃぐちゃになる・・・という事態を防ぐことができるので、オススメです。</p>
+<p>それでは<a href="https://drive.google.com/drive/my-drive" target="_blank">Googleドライブのマイドライブ</a>を開きます。</p>
+<p>すると、ファイル一覧の中に先ほどコピーした「圃場台帳アプリsample」というファイルが作成されているはずです。</p>
+<p><img src="./006.png" alt="image-20220220192024509"></p>
+<p>続いて今回のアプリ用のプロジェクトフォルダを作っていきます。<br>
+左上にある <strong>「＋新規」ボタン</strong> から、<strong>「フォルダ」</strong> を選択します。</p>
+<p><img src="./008.png" alt="image-20220220192444284"></p>
+<p>すると画面中央に「新しいフォルダ」というポップアップが表示されます。</p>
+<p><img src="./009.png" alt="image-20220220192529416"></p>
+<p>ここでフォルダ名を入力して「作成」をクリックします。<br>
+フォルダ名は皆さんがわかればなんでも良いです。ここでは「(作成年月)_圃場台帳アプリ」としてみました。</p>
+<p><img src="./010.png" alt="image-20220220192851197"></p>
+<p>するとこのように、ドライブに新たにフォルダが作成されました。</p>
+<p><img src="./011_1.png" alt="image-20220220192909627"></p>
+<p>これを、今回のプロジェクトフォルダとしていきたいと思います。<br>
+最初にコピーした「圃場台帳アプリsample」を、作成したフォルダの上までドラッグ&amp;ドロップします。</p>
+<p><img src="./011_2.png" alt="スクリーンショット 2022-02-20 19.30.40"></p>
+<p>これで、ファイルの移動が完了しました。<br>
+プロジェクトフォルダをダブルクリックして開いてみると、スプレッドシートのファイルが移動しているのが確認できます。</p>
+<p><img src="./012.png" alt="image-20220220193154186"></p>
+<h2 id="まとめ">まとめ</h2>
+<p>以上で、今回のGlideアプリを制作するためのサンプルデータの準備が完了しました。</p>
+<p>次回は、このスプレッドシートのサンプルデータを眺めながら、Glideアプリ制作にどんなデータが必要なのか、確認しておきたいと思います。</p>
+
+        </div>
+
+        
+
+<section class="section sns_parent">
+  <div class="sns_section">
+      <p class="text-center">⬇︎ぜひ記事のシェアもお願いします！</p>
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f&text=%e3%80%90%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeGlide%e3%80%91%e5%85%b1%e6%9c%89%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%82%92%e3%83%9e%e3%82%a4%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%81%ab%e3%82%b3%e3%83%94%e3%83%bc%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95 " target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f&title=%e3%80%90%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeGlide%e3%80%91%e5%85%b1%e6%9c%89%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%82%92%e3%83%9e%e3%82%a4%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%81%ab%e3%82%b3%e3%83%94%e3%83%bc%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f&t=%e3%80%90%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeGlide%e3%80%91%e5%85%b1%e6%9c%89%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%82%92%e3%83%9e%e3%82%a4%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%81%ab%e3%82%b3%e3%83%94%e3%83%bc%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2ffield-ledger-glideapp02%2f&title=%e3%80%90%e3%81%af%e3%81%98%e3%82%81%e3%81%a6%e3%81%aeGlide%e3%80%91%e5%85%b1%e6%9c%89%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%82%92%e3%83%9e%e3%82%a4%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%81%ab%e3%82%b3%e3%83%94%e3%83%bc%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://nouka-it.com"><img src="https://nouka-it.com/images/banner.png" alt="畑作農家のITツールDIY"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/massa_potato">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/ohsakifarm/">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://note.com/agrifeel_labo">note</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/index.xml">rss</a></li>
+          
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/about">プロフィール</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/blog">記事一覧</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/contact">お問い合わせ</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2021 大崎真裕 All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://nouka-it.com/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://nouka-it.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/slick/slick.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/fuse.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/mark.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://nouka-it.com/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>

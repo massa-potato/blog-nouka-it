@@ -1,5 +1,5 @@
 ---
-title: "ある１地点の座標（緯度と経度）を取得する方法【Googleマップ】"
+title: "ある地点の座標（緯度と経度）を取得する方法【Googleマップ】"
 description: "Googleマップを使って、ある地点の座標を調べる方法をまとめました。"
 slug: "googlemap-coordinate"
 date: "2022-02-19"

@@ -13,6 +13,8 @@ draft: false
 
 本シリーズは、**ノーコード開発ツール「Glide」** を使ってはじめてのアプリ制作をしていくシリーズです。
 
+[■「はじめてのGlide」一連の記事はコチラ](https://nouka-it.com/categories/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEglide/)
+
 前回の記事で、これから制作していきたい農場のマップを表示する「圃場台帳アプリ」の概要を、現場での課題感も交えながら紹介しました。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://nouka-it.com/blog/2022/field-ledger-glideapp01/" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnouka-it.com%2Fblog%2F2022%2Ffield-ledger-glideapp01%2F&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
@@ -56,15 +58,14 @@ draft: false
 
 ![image-20220222225323876](./001_2.png)
 
-これは、僕の方でスプレッドシートの共有をする際に「閲覧権限のみ」として共有しているためです。  
+これは、このスプレッドシートの共有を「閲覧権限のみ」としているためです。  
 
 実はこのままだと、皆さんはスプレッドシートを見ることはできますが、手元でこのスプレッドシートを編集することができません。  
 試しにどこかのセルをクリックして編集しようとしても、何も入力ができないはずです。
 
 そこで皆さんが手元でこのスプレッドシートを扱えるようにするために、自身のドライブへのコピーを作成しておく必要があります。
 
-
-### (１)自身のマイドライブにスプレッドシートのコピーを作成する
+### (１)マイドライブにスプレッドシートのコピーを作成する
 
 具体的なやり方を見ていきましょう。  
 まずは **メニューバーの「ファイル」から「コピーを作成」を選択** してみてください。
@@ -137,3 +138,6 @@ draft: false
 以上で、今回のGlideアプリを制作するためのサンプルデータの準備が完了しました。
 
 次回は、このスプレッドシートのサンプルデータを眺めながら、Glideアプリ制作にどんなデータが必要なのか、確認しておきたいと思います。
+  
+  
+[■「はじめてのGlide」一連の記事はコチラ](https://nouka-it.com/categories/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEglide/)

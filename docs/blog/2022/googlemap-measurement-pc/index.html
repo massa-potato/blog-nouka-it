@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="JA"><head>
+  <meta charset="utf-8">
+  <title>畑作農家のITツールDIY</title>
+
+  
+  <meta property="og:title" content="パソコン上で圃場の長さ・面積を測定する【Google Map】" />
+<meta property="og:description" content="パソコン版Googleマップを使って、長さや面積を測定する方法をまとめました。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nouka-it.com/blog/2022/googlemap-measurement-pc/" /><meta property="og:image" content="https://nouka-it.com/images/post/2022/googlemap-measurement-pc.png" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-03-08T18:00:00+09:00" />
+<meta property="article:modified_time" content="2022-03-08T18:00:00+09:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nouka-it.com/images/post/2022/googlemap-measurement-pc.png"/>
+
+<meta name="twitter:title" content="パソコン上で圃場の長さ・面積を測定する【Google Map】"/>
+<meta name="twitter:description" content="パソコン版Googleマップを使って、長さや面積を測定する方法をまとめました。"/>
+
+
+  
+  <script src="//kitchen.juicer.cc/?color=k3QPnmGvdMI=" async></script>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="パソコン版Googleマップを使って、長さや面積を測定する方法をまとめました。">
+  <meta name="author" content="おおさき">
+  <meta name="generator" content="Hugo 0.91.2" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://nouka-it.com/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://nouka-it.com/scss/style.min.css" media="screen">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://nouka-it.com/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://nouka-it.com"><img class="img-fluid"
+          src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/massa_potato"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/ohsakifarm/"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://note.com/agrifeel_labo"><i class="ti-write"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://nouka-it.com/index.xml"><i class="ti-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://nouka-it.com"><img class="img-fluid"
+            src="https://nouka-it.com/images/logo.png" alt="畑作農家のITツールDIY"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/about">プロフィール</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/blog">記事一覧</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nouka-it.com/contact">お問い合わせ</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://nouka-it.com/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/tips"
+          class="text-primary">Tips</a>
+        
+        <h2>パソコン上で圃場の長さ・面積を測定する【Google Map】</h2>
+        <div class="mb-3 post-meta">
+          
+          
+          
+          <span>2022-03-08</span>
+          
+        </div>
+        
+        <img src="https://nouka-it.com/images/post/2022/googlemap-measurement-pc.png" class="img-fluid w-100 mb-4" alt="パソコン上で圃場の長さ・面積を測定する【Google Map】">
+        
+
+        
+
+<section class="author-contaner">
+    <div class="text-center author-img">
+        
+        <h4 class="widget-title">執筆者</h4>
+        
+        <img src="https://nouka-it.com/images/author.jpg" alt="" width=120 
+        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+        
+        
+    </div>
+    <p class="text-center author-text">おおさき（<a href="https://twitter.com/massa_potato">@massa_potato</a>）</p>
+</section>
+
+
+        
+
+<section class="section sns_parent">
+  <div class="sns_section">
+      <p class="text-center">⬇︎ぜひ記事のシェアもお願いします！</p>
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f&text=%e3%83%91%e3%82%bd%e3%82%b3%e3%83%b3%e4%b8%8a%e3%81%a7%e5%9c%83%e5%a0%b4%e3%81%ae%e9%95%b7%e3%81%95%e3%83%bb%e9%9d%a2%e7%a9%8d%e3%82%92%e6%b8%ac%e5%ae%9a%e3%81%99%e3%82%8b%e3%80%90Google%20Map%e3%80%91 " target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f&title=%e3%83%91%e3%82%bd%e3%82%b3%e3%83%b3%e4%b8%8a%e3%81%a7%e5%9c%83%e5%a0%b4%e3%81%ae%e9%95%b7%e3%81%95%e3%83%bb%e9%9d%a2%e7%a9%8d%e3%82%92%e6%b8%ac%e5%ae%9a%e3%81%99%e3%82%8b%e3%80%90Google%20Map%e3%80%91" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f&t=%e3%83%91%e3%82%bd%e3%82%b3%e3%83%b3%e4%b8%8a%e3%81%a7%e5%9c%83%e5%a0%b4%e3%81%ae%e9%95%b7%e3%81%95%e3%83%bb%e9%9d%a2%e7%a9%8d%e3%82%92%e6%b8%ac%e5%ae%9a%e3%81%99%e3%82%8b%e3%80%90Google%20Map%e3%80%91" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f&title=%e3%83%91%e3%82%bd%e3%82%b3%e3%83%b3%e4%b8%8a%e3%81%a7%e5%9c%83%e5%a0%b4%e3%81%ae%e9%95%b7%e3%81%95%e3%83%bb%e9%9d%a2%e7%a9%8d%e3%82%92%e6%b8%ac%e5%ae%9a%e3%81%99%e3%82%8b%e3%80%90Google%20Map%e3%80%91" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        <div class="content mb-5">
+          <h2 id="はじめに">はじめに</h2>
+<p><strong><a href="https://www.google.co.jp/maps?hl=ja" target="_blank">Google Map</a></strong> を使って、距離や面積を測ることができるのはご存知でしょうか？</p>
+<p>この距離測定の機能を使うと、例えば <strong>「新しく借りることになった圃場の長さは？」「圃場を途中で割っていくつかの作物をまく場合にどのくらいの面積になるの？」</strong> などというような場合にとても便利なんです。</p>
+<p>マップの表示を「航空写真」にすると、このように圃場の境界もしっかり判別することができます。</p>
+<p><img src="./01.png" alt="画像1"></p>
+<p>本記事ではこの <strong>Google Mapの距離測定機能</strong> を使って、三角形の形をした圃場の距離と面積を実際に計算してみます。</p>
+<h2 id="参考google-mapのパソコン版とスマホ版の違い">（参考）Google Mapのパソコン版とスマホ版の違い</h2>
+<p>Google Mapをパソコンとスマホで使う場合で、距離測定機能でできることがやや異なっているので、ご注意ください。</p>
+
+
+<div class="info">
+    <p><b>【MEMO】</b></p>
+    <p>
+・パソコン版（Windows, Mac） → 距離と面積を測定できる</br>
+・スマホ版（Android, iPhone） → 距離の測定のみ
+</p>
+</div>
+<p>いずれにしても距離の測定は可能です。<br>
+本記事ではパソコン版を使って、距離と面積の測定を実践していきます。</p>
+<h2 id="距離を測定する">距離を測定する</h2>
+<p>まずは、２地点間の距離を測定してみます。</p>
+<p>パソコン版の<a href="https://www.google.co.jp/maps/?hl=ja" target="_blank">Google Map</a>を開き、測定したい圃場の場所を住所検索などで探しておきます。</p>
+<p>次に左下の <strong>[航空写真]</strong> と書かれているところをクリックして、マップの表示を衛星画像に変更します。</p>
+<p><img src="./02.png" alt="画像2"></p>
+<p>するとこのように、圃場の境界線がわかりやすくなりました。</p>
+<p><img src="./03.png" alt="画像3"></p>
+<p>今回は、この衛星画像の真ん中らへんにある、縦長の三角形の畑を測定していきたいと思います。</p>
+<p>拡大するとより境界をはっきり見ることができます。<strong>右下の＋マークをクリックするか、マウスホイールでズーム</strong>することができます。</p>
+<p>それでは、実際に距離を測定していきましょう。</p>
+<p>測定したい場所の <strong>始点で右クリック</strong> し、出てくるメニューから <strong>[距離を測定]</strong> を選びます。</p>
+<p><img src="./04.png" alt="画像4"></p>
+<p>次に <strong>終点で左クリック</strong> すると、画面下部にその直線の距離が表示されます。</p>
+<p><img src="./05.png" alt="画像5"></p>
+<p>この畑の境界線の距離は、約250mのようですね。</p>
+
+
+<div class="info">
+    <p><b>【MEMO】</b></p>
+    <p>
+もし点を打つ位置を間違えた場合は、以下の操作で点を修正・削除できます。</br>
+・点をドラッグして移動</br>
+・点を左クリックして削除</br>
+</p>
+</div>
+<p><strong>距離測定を終了する場合</strong>は、右クリックして出てくるメニューで <strong>[測定を消去]</strong> をクリックすればOKです。</p>
+<p><img src="./06.png" alt="画像6"></p>
+<h2 id="面積を測定する">面積を測定する</h2>
+<p>次に、２地点の距離だけでなく <strong>外周の長さと面積</strong> を測定してみましょう。</p>
+<p>先ほどの直線に続けて左クリックで点を取っていくことで、圃場の外周を折れ線のように繋げていくことができます。<br>
+最後に始点の場所をもう一度クリックすると、畑の範囲を囲むことができます。</p>
+<p><img src="./07.png" alt="画像7"></p>
+<p>下のウィンドウに、総面積と合計距離が出てきていますね。
+この圃場の総面積は「約7000㎡ ＝ 約0.7ha」というのが簡易的に分かりました。</p>
+<h2 id="おわりに">おわりに</h2>
+<p>パソコン版のGoogle Mapを使って、圃場の長さと面積を簡単に調べることができました。</p>
+<p>とても簡単で便利なので、ぜひ試してみてくださいね！</p>
+
+        </div>
+
+        
+
+<section class="section sns_parent">
+  <div class="sns_section">
+      <p class="text-center">⬇︎ぜひ記事のシェアもお願いします！</p>
+      <div class="sns_button twitter">
+        <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f&text=%e3%83%91%e3%82%bd%e3%82%b3%e3%83%b3%e4%b8%8a%e3%81%a7%e5%9c%83%e5%a0%b4%e3%81%ae%e9%95%b7%e3%81%95%e3%83%bb%e9%9d%a2%e7%a9%8d%e3%82%92%e6%b8%ac%e5%ae%9a%e3%81%99%e3%82%8b%e3%80%90Google%20Map%e3%80%91 " target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="sns_button hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f&title=%e3%83%91%e3%82%bd%e3%82%b3%e3%83%b3%e4%b8%8a%e3%81%a7%e5%9c%83%e5%a0%b4%e3%81%ae%e9%95%b7%e3%81%95%e3%83%bb%e9%9d%a2%e7%a9%8d%e3%82%92%e6%b8%ac%e5%ae%9a%e3%81%99%e3%82%8b%e3%80%90Google%20Map%e3%80%91" target="_blank" title="hatena"><i class="fa fa-hatena"></i></i></a>
+      </div>
+      <div class="sns_button facebook">
+        <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f&t=%e3%83%91%e3%82%bd%e3%82%b3%e3%83%b3%e4%b8%8a%e3%81%a7%e5%9c%83%e5%a0%b4%e3%81%ae%e9%95%b7%e3%81%95%e3%83%bb%e9%9d%a2%e7%a9%8d%e3%82%92%e6%b8%ac%e5%ae%9a%e3%81%99%e3%82%8b%e3%80%90Google%20Map%e3%80%91" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="sns_button google">
+        <a href="https://plus.google.com/share?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f" target="_blank" title="google+"><i class="fab fa-google-plus"></i></a>
+      </div>
+      <div class="sns_button pocket">
+        <a href="http://getpocket.com/edit?url=https%3a%2f%2fnouka-it.com%2fblog%2f2022%2fgooglemap-measurement-pc%2f&title=%e3%83%91%e3%82%bd%e3%82%b3%e3%83%b3%e4%b8%8a%e3%81%a7%e5%9c%83%e5%a0%b4%e3%81%ae%e9%95%b7%e3%81%95%e3%83%bb%e9%9d%a2%e7%a9%8d%e3%82%92%e6%b8%ac%e5%ae%9a%e3%81%99%e3%82%8b%e3%80%90Google%20Map%e3%80%91" target="_blank" title="pocket"><i class="fab fa-get-pocket"></i></a>
+      </div>
+  </div>
+
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://nouka-it.com"><img src="https://nouka-it.com/images/banner.png" alt="畑作農家のITツールDIY"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/massa_potato">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/ohsakifarm/">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://note.com/agrifeel_labo">note</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/index.xml">rss</a></li>
+          
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/about">プロフィール</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/blog">記事一覧</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nouka-it.com/contact">お問い合わせ</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2021 大崎真裕 All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://nouka-it.com/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://nouka-it.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/slick/slick.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/fuse.min.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/mark.js"></script>
+
+<script src="https://nouka-it.com/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://nouka-it.com/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>

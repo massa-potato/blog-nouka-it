@@ -1,5 +1,5 @@
 ---
-title: "【はじめてのGlide 02】共有スプレッドシートをマイドライブにコピーする方法"
+title: "【はじめてのGlide】共有スプレッドシートをマイドライブにコピーする方法"
 description: "ノーコードアプリ開発ツール「Glide」を使って初めてのアプリ制作をしていきます。今回はサンプルデータの入ったスプレッドシートを自分のGoogleドライブにコピーする方法を整理しました。"
 slug: "field-ledger-glideapp02"
 date: "2022-02-25T18:00:00+0900"
@@ -11,11 +11,12 @@ type: "post"
 draft: false
 ---
 
-本シリーズは、**ノーコード開発ツール「Glide」** を使ってはじめてのアプリ制作をしていくシリーズです。
+本シリーズは、**ノーコード開発ツール「Glide」** を使ってはじめてのアプリ制作をしていくシリーズです。  
+農場のマップを表示する「圃場台帳アプリ」を題材に、スプレッドシートでのデータの持ち方やアプリの作り方を学んでいきます。
 
 [■「はじめてのGlide」一連の記事はコチラ](https://nouka-it.com/categories/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEglide/)
 
-前回の記事で、これから制作していきたい農場のマップを表示する「圃場台帳アプリ」の概要を、現場での課題感も交えながら紹介しました。
+前回の記事で、これから制作していきたいアプリの概要を、現場での課題感も交えながら紹介しました。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://nouka-it.com/blog/2022/field-ledger-glideapp01/" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnouka-it.com%2Fblog%2F2022%2Ffield-ledger-glideapp01%2F&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 

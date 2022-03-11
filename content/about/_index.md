@@ -63,8 +63,8 @@ type : "about"
 
 |  スキル | 活用  |
 | ---- | ---- |
-| Google Apps Script（GAS） | Googleドライブ・スプレッドシート操作やLINE bot制作 |
-| Python | PDF作成、ファイル整理などちょっとしたパソコン操作の自動化 |
+| Google Apps Script（GAS） | Googleドライブ・スプレッドシート操作や、LINE bot・Slack bot制作 |
+| Python | PDF作成、ファイル整理などパソコン操作の自動化・効率化 |
 | Glide | ノーコードで簡易的なスマホアプリ制作 |
 | Go/Hugo | このブログはHugo + GitHub Pagesで公開中（テーマ：[liva-hugo](https://github.com/gethugothemes/liva-hugo)） |
 

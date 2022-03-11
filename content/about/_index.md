@@ -48,15 +48,15 @@ type : "about"
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://note.com/agrifeel_labo/n/na82d72cd3b82" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnote.com%2Fagrifeel_labo%2Fn%2Fna82d72cd3b82&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
-当農場の甜菜の育苗管理のためにGAS + Spreadsheetで制作しました。  
+当農場のビニルハウスでの育苗管理のために、GAS + Spreadsheetで温度管理用のLINE botを制作しました。  
 温度記録計「T&D おんどとり」で取ったデータを整形してLINEに通知し、温度管理に役立てています。
 
 #### （３）QRコードを使った収穫物の管理システム
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://note.com/agrifeel_labo/n/n634ed062db1c" data-iframely-url="//cdn.iframe.ly/api/iframe?card=small&url=https%3A%2F%2Fnote.com%2Fagrifeel_labo%2Fn%2Fn634ed062db1c&key=d9cf522df2f6cbab308f945a2b3c5555"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
-当農場の馬鈴薯の収穫物管理のために制作しました。  
-スチールコンテナにQRコードをつけて、スマホで読み取ることで収穫日や収量の管理ができるスマホアプリをノーコードツールGlideで制作しています。
+当農場の馬鈴薯の収穫物管理のために、ノーコード開発ツールGlideで制作しました。  
+スチールコンテナに防水加工したQRを貼り付けて、スマホのバーコードリーダーで読み取ることで収穫日や収量の管理ができるスマホアプリを制作し、活用しています。
   
 <br>
 <br>
@@ -66,7 +66,7 @@ type : "about"
 | Google Apps Script（GAS） | Googleドライブ・スプレッドシート操作やLINE bot制作 |
 | Python | PDF作成、ファイル整理などちょっとしたパソコン操作の自動化 |
 | Glide | ノーコードで簡易的なスマホアプリ制作 |
-| Hugo | このブログはHugo + GitHub Pagesで公開中（テーマ：[liva-hugo](https://github.com/gethugothemes/liva-hugo)） |
+| Go/Hugo | このブログはHugo + GitHub Pagesで公開中（テーマ：[liva-hugo](https://github.com/gethugothemes/liva-hugo)） |
 
 ### 好きなこと
 

@@ -6,7 +6,22 @@
     <description>Recent content in はじめてのGlide on 畑作農家のITツールDIY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>JA</language>
-    <lastBuildDate>Thu, 03 Mar 2022 18:00:00 +0900</lastBuildDate><atom:link href="https://nouka-it.com/categories/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEglide/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Mar 2022 17:00:00 +0900</lastBuildDate><atom:link href="https://nouka-it.com/categories/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEglide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【はじめてのGlide】Glideアカウントを作成してアプリ制作を始めよう</title>
+      <link>https://nouka-it.com/blog/2022/field-ledger-glideapp04/</link>
+      <pubDate>Fri, 11 Mar 2022 17:00:00 +0900</pubDate>
+      
+      <guid>https://nouka-it.com/blog/2022/field-ledger-glideapp04/</guid>
+      <description>本シリーズは、ノーコード開発ツール「Glide」 を使ってはじめてのアプリ制作をしていくシリーズです。
+農場のマップを表示する「圃場台帳アプリ」を題材に、スプレッドシートでのデータの持ち方やアプリの作り方を学んでいきます。
+■「はじめてのGlide」一連の記事はコチラ
+前回の記事では、アプリ制作にどのようなデータが必要なのかを、サンプルデータを眺めながら確認してきました。
+ 今回からはいよいよお待ちかね、Glideでのノーコードアプリ制作をはじめていきたいと思います！
+まずは手始めに、アカウント作成のやり方 を見ていきましょう。
+目次  Glideでアカウントを作成する Glideアカウントの初期設定 まとめ    Glideでアカウントを作成する それでは早速はじめていきましょう。</description>
+    </item>
+    
     <item>
       <title>【はじめてのGlide】アプリ制作に必要なデータをサンプルデータで確認しよう</title>
       <link>https://nouka-it.com/blog/2022/field-ledger-glideapp03/</link>

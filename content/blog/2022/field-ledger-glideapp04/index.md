@@ -6,7 +6,7 @@ date: "2022-03-11T17:00:00+0900"
 image: "images/post/2022/field-ledger-glideapp04.png"
 images: ["images/post/2022/field-ledger-glideapp04.png"]
 categories: 
-  - ""
+  - "はじめてのGlide"
 type: "post"
 draft: false
 ---
